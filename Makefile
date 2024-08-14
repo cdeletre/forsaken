@@ -122,7 +122,7 @@ ifneq ($(MINGW),1)
 endif
 
 # ProjectX-specific includes
-CFLAGS += -I.
+CFLAGS += -Isrc
 
 # ProjectX-specific macros
 ifeq ($(DXMOUSE),1)
@@ -148,8 +148,8 @@ ifeq ($(INPUT_DISABLED),1)
 endif
 
 
-INC=$(wildcard *.h)
-SRC=$(wildcard *.c)
+INC=$(wildcard src/*.h)
+SRC=$(wildcard src/*.c)
 OBJ=$(patsubst %.c,%.o,$(SRC))
 
 # allows user to override settings
@@ -160,7 +160,7 @@ FLAGS+=$(ADD_FLAGS)
 CFLAGS+=$(ADD_CFLAGS)
 LDFLAGS+=$(ADD_LDFLAGS)
 
-BIN=projectx
+BIN=projectx.aarch64
 
 all: $(BIN)
 

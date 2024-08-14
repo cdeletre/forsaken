@@ -248,9 +248,15 @@ void app_keyboard( SDL_KeyboardEvent * key )
 	if( key->type == SDL_KEYDOWN )
 	{
 		input_buffer_send(
+#if SDL_VERSION_ATLEAST(2,0,0)
+// TODO: check if it's working with SDL2
+// It just a dirty patch to pass the build process with SDL2 enabled
+				key->keysym.sym
+#else
 			key->keysym.unicode ? 
 				key->keysym.unicode :
 				key->keysym.sym
+#endif
 		);
 	}
 }
@@ -554,9 +560,13 @@ bool joysticks_init(void)
 
 		// TODO
 		// JoystickInfo[i].NumBalls = SDL_JoystickNumBalls(joy);
-
+#if SDL_VERSION_ATLEAST(2,0,0)
+// TODO: FIXME
+// It just a dirty patch to pass the build process with SDL2 enabled
+		JoystickInfo[i].Name = "FIXME";
+#else
 		JoystickInfo[i].Name = strdup( SDL_JoystickName(i) );
-
+#endif
 		DebugPrintf( 
 			"joysticks_init: joystick (%d), name='%s', axises=%d, buttons=%d, hats=%d\n", 
 			i, JoystickInfo[i].Name, JoystickInfo[i].NumAxis, JoystickInfo[i].NumButtons,
