@@ -191,7 +191,7 @@ ifeq ($(BOT),1)
 endif
 
 # ProjectX-specific includes
-CFLAGS += -I.
+CFLAGS += -Isrc
 
 # ProjectX-specific macros
 ifeq ($(DXMOUSE),1)
@@ -208,8 +208,8 @@ ifeq ($(DEBUG),1)
   CFLAGS+= -DDEBUG_ON -DDEBUG_COMP -DDEBUG_SPOTFX_SOUND -DDEBUG_VIEWPORT
 endif
 
-INC=$(wildcard *.h)
-SRC=$(wildcard *.c)
+INC=$(wildcard src/*.h)
+SRC=$(wildcard src/*.c)
 OBJ=$(patsubst %.c,%.o,$(SRC))
 
 # allows user to override settings
@@ -220,7 +220,7 @@ FLAGS+=$(ADD_FLAGS)
 CFLAGS+=$(ADD_CFLAGS)
 LDFLAGS+=$(ADD_LDFLAGS)
 
-BIN=projectx
+BIN=projectx.armhf
 
 all: $(BIN)
 

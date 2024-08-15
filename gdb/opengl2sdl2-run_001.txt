@@ -1,0 +1,2404 @@
+GNU gdb (GDB) 13.2
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-rocknix-linux-gnueabi".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./projectx.aarch64_gl2sdl2...
+(gdb) run
+Starting program: /storage/roms/ports/forsaken/projectx.aarch64_gl2sdl2 -Debug
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/libthread_db.so.1".
+1723652685.979 cli:   -Debug
+1723652685.984 SDL compile-time version: 2.0.10
+1723652685.984 SDL runtime version: 2.30.4
+1723652686.213 file: check exists 'configs/debug.txt' = exits
+1723652686.214 gamma read from config as 195, max 300
+1723652686.214 gamma after clamp: 195
+1723652686.214 gamma variable: 195/100.0F = 1.950000
+1723652686.215 vsync set to 0
+1723652686.215 init_video_modes: found requested resolution of 640x480
+1723652686.215 aspect ratio: 640:480
+[New Thread 0x7ff53be160 (LWP 119874)]
+1723652686.435 main_sdl: depth buffer is 16 bpp
+1723652686.435 gl vendor='Mesa', renderer='Mali-G52 r1 (Panfrost)', version='3.1 Mesa 24.2.0-devel (git-332252966b)', shader='1.40', stereo='false'
+1723652686.436 extensions='GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_ATI_fragment_shader GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_depth_clamp GL_NV_fog_distance GL_NV_half_float GL_APPLE_packed_pixels GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_NV_primitive_restart GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_occlusion_query2 GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_ATI_texture_compression_3dc GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_texture_array GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_OES_EGL_image GL_EXT_texture_buffer_object GL_AMD_texture_texture4 GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_draw_instanced GL_ARB_half_float_vertex GL_ARB_instanced_arrays GL_ARB_map_buffer_range GL_ARB_texture_buffer_object GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_AMD_conservative_depth GL_AMD_depth_clamp_separate GL_AMD_draw_buffers_blend GL_AMD_seamless_cubemap_per_texture GL_AMD_shader_stencil_export GL_ARB_ES2_compatibility GL_ARB_blend_func_extended GL_ARB_compatibility GL_ARB_debug_output GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_stencil_export GL_ARB_shader_texture_lod GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_cube_map_array GL_ARB_texture_gather GL_ARB_texture_multisample GL_ARB_texture_rgb10_a2ui GL_ARB_uniform_buffer_object GL_ARB_vertex_type_2_10_10_10_rev GL_EXT_provoking_vertex GL_EXT_texture_snorm GL_EXT_texture_storage GL_MESA_texture_signed_rgba GL_NV_copy_image GL_ARB_draw_indirect GL_ARB_get_program_binary GL_ARB_robustness GL_ARB_separate_shader_objects GL_ARB_shader_bit_encoding GL_ARB_shader_subroutine GL_ARB_texture_compression_bptc GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_EXT_direct_state_access GL_AMD_multi_draw_indirect GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_ARB_base_instance GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_internalformat_query GL_ARB_map_buffer_alignment GL_ARB_shader_atomic_counters GL_ARB_shader_image_load_store GL_ARB_shading_language_420pack GL_ARB_shading_language_packing GL_ARB_texture_storage GL_ARB_transform_feedback_instanced GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_transform_feedback GL_AMD_shader_trinary_minmax GL_ARB_ES3_compatibility GL_ARB_arrays_of_arrays GL_ARB_clear_buffer_object GL_ARB_copy_image GL_ARB_explicit_uniform_location GL_ARB_framebuffer_no_attachments GL_ARB_invalidate_subdata GL_ARB_multi_draw_indirect GL_ARB_program_interface_query GL_ARB_shader_image_size GL_ARB_shader_storage_buffer_object GL_ARB_stencil_texturing GL_ARB_texture_buffer_range GL_ARB_texture_query_levels GL_ARB_texture_storage_multisample GL_ARB_texture_view GL_ARB_vertex_attrib_binding GL_KHR_debug GL_KHR_texture_compression_astc_ldr GL_ARB_buffer_storage GL_ARB_clear_texture GL_ARB_enhanced_layouts GL_ARB_internalformat_query2 GL_ARB_multi_bind GL_ARB_seamless_cubemap_per_texture GL_ARB_shader_draw_parameters GL_ARB_shading_language_include GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_stencil8 GL_ARB_vertex_type_10f_11f_11f_rev GL_EXT_debug_label GL_EXT_shader_framebuffer_fetch GL_EXT_shader_integer_mix GL_ARB_clip_control GL_ARB_conditional_render_inverted GL_ARB_direct_state_access GL_ARB_get_texture_sub_image GL_EXT_polygon_offset_clamp GL_EXT_shader_image_load_formatted GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_ARB_parallel_shader_compile GL_ARB_shader_atomic_counter_ops GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_RG8 GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_MESA_shader_integer_functions GL_ARB_polygon_offset_clamp GL_ARB_texture_filter_anisotropic GL_KHR_parallel_shader_compile GL_EXT_EGL_image_storage GL_EXT_shader_framebuffer_fetch_non_coherent GL_INTEL_blackhole_render GL_EXT_EGL_sync GL_EXT_EGL_image_storage_compression GL_NV_ES1_1_compatibility GL_MESA_texture_const_bandwidth '
+1723652686.436 render: anisotropic filtering support = true
+1723652686.436 build_gamma_table( 1.000000 )
+1723652686.437 Using default vertex shader:
+
+#version 120
+
+uniform bool orthographic;
+
+uniform mat4 mvp;
+uniform mat4 ortho_proj;
+
+attribute vec3 pos;
+attribute vec4 tlpos;
+attribute vec4 vcolor;
+attribute vec2 vtexc;
+
+varying vec4 color;
+varying vec2 texc;
+
+void main(void)
+{
+    if (orthographic)
+    {
+    }
+    else
+    {
+        gl_Position = mvp * vec4(pos, 1.0);
+    }
+    color = vcolor.bgra;
+    texc = vtexc;
+}
+
+1723652686.437 Using default fragment shader:
+
+#version 120
+
+uniform bool colorkeying_enabled;
+uniform bool texturing_enabled;
+uniform sampler2D tex;
+
+varying vec4 color;
+varying vec2 texc;
+
+ vec4 fcolor;
+
+void main(void)
+{
+    vec2 dx;
+    vec2 dy;
+
+    if ( texturing_enabled )
+        fcolor = texture2D(tex, vec2(texc.s,texc.t)) * color;
+    else
+        fcolor = color;
+    if ( colorkeying_enabled && fcolor.a <= (100.0/255.0) )
+        discard;
+    gl_FragColor = fcolor;
+}
+
+1723652686.439 cleaning up joystick: (null) 0
+1723652686.439 cleaning up joystick: (null) 1
+1723652686.439 cleaning up joystick: (null) 2
+1723652686.439 cleaning up joystick: (null) 3
+1723652686.439 cleaning up joystick: (null) 4
+1723652686.439 cleaning up joystick: (null) 5
+1723652686.439 cleaning up joystick: (null) 6
+1723652686.439 cleaning up joystick: (null) 7
+1723652686.439 cleaning up joystick: (null) 8
+1723652686.439 cleaning up joystick: (null) 9
+1723652686.439 cleaning up joystick: (null) 10
+1723652686.439 cleaning up joystick: (null) 11
+1723652686.439 cleaning up joystick: (null) 12
+1723652686.439 cleaning up joystick: (null) 13
+1723652686.439 cleaning up joystick: (null) 14
+1723652686.440 cleaning up joystick: (null) 15
+1723652686.440 joysticks_init: 1 joysticks connected
+1723652686.440 joysticks_init: joystick (0), name='FIXME', axises=4, buttons=17, hats=0
+1723652686.440 file: find_file called with pilots/*.txt
+1723652686.440 file: find_file: no match
+1723652686.440 ReInitJoysticks: started with 1 joysticks
+1723652686.440 ReInitJoysticks: finished with 1 joysticks
+1723652686.440 vkey_map:  = 0
+1723652686.440 vkey_map:  = 1
+1723652686.440 vkey_map:  = 2
+1723652686.440 vkey_map:  = 3
+1723652686.440 vkey_map:  = 4
+1723652686.440 vkey_map:  = 5
+1723652686.440 vkey_map:  = 6
+1723652686.440 vkey_map:  = 7
+1723652686.440 vkey_map: Backspace = 8
+1723652686.440 vkey_map: Tab = 9
+1723652686.440 vkey_map:
+ = 10
+1723652686.440 vkey_map:
+                          = 11
+1723652686.440 vkey_map:
+                          = 12
+1723652686.440 vkey_map: Return = 13
+1723652686.440 vkey_map:  = 14
+1723652686.440 vkey_map:  = 15
+1723652686.440 vkey_map:  = 16
+1723652686.440 vkey_map:  = 17
+1723652686.440 vkey_map:  = 18
+1723652686.440 vkey_map:  = 19
+1723652686.440 vkey_map:  = 20
+1723652686.440 vkey_map:  = 21
+1723652686.440 vkey_map:  = 22
+1723652686.440 vkey_map:  = 23
+1723652686.440 vkey_map:  = 24
+1723652686.440 vkey_map:  = 25
+1723652686.440 vkey_map:  = 26
+1723652686.440 vkey_map: Escape = 27
+1723652686.440 vkey_map:  = 28
+1723652686.440 vkey_map:  = 29
+1723652686.440 vkey_map:  = 30
+1723652686.440 vkey_map:  = 31
+1723652686.440 vkey_map: Space = 32
+1723652686.440 vkey_map: ! = 33
+1723652686.440 vkey_map: " = 34
+1723652686.440 vkey_map: # = 35
+1723652686.440 vkey_map: $ = 36
+1723652686.440 vkey_map: % = 37
+1723652686.440 vkey_map: & = 38
+1723652686.440 vkey_map: ' = 39
+1723652686.440 vkey_map: ( = 40
+1723652686.441 vkey_map: ) = 41
+1723652686.441 vkey_map: * = 42
+1723652686.441 vkey_map: + = 43
+1723652686.441 vkey_map: , = 44
+1723652686.441 vkey_map: - = 45
+1723652686.441 vkey_map: . = 46
+1723652686.441 vkey_map: / = 47
+1723652686.441 vkey_map: 0 = 48
+1723652686.441 vkey_map: 1 = 49
+1723652686.441 vkey_map: 2 = 50
+1723652686.441 vkey_map: 3 = 51
+1723652686.441 vkey_map: 4 = 52
+1723652686.441 vkey_map: 5 = 53
+1723652686.441 vkey_map: 6 = 54
+1723652686.441 vkey_map: 7 = 55
+1723652686.441 vkey_map: 8 = 56
+1723652686.441 vkey_map: 9 = 57
+1723652686.441 vkey_map: : = 58
+1723652686.441 vkey_map: ; = 59
+1723652686.441 vkey_map: < = 60
+1723652686.441 vkey_map: = = 61
+1723652686.441 vkey_map: > = 62
+1723652686.441 vkey_map: ? = 63
+1723652686.441 vkey_map: @ = 64
+1723652686.441 vkey_map: A = 65
+1723652686.441 vkey_map: B = 66
+1723652686.441 vkey_map: C = 67
+1723652686.441 vkey_map: D = 68
+1723652686.441 vkey_map: E = 69
+1723652686.441 vkey_map: F = 70
+1723652686.441 vkey_map: G = 71
+1723652686.441 vkey_map: H = 72
+1723652686.441 vkey_map: I = 73
+1723652686.441 vkey_map: J = 74
+1723652686.441 vkey_map: K = 75
+1723652686.441 vkey_map: L = 76
+1723652686.441 vkey_map: M = 77
+1723652686.441 vkey_map: N = 78
+1723652686.441 vkey_map: O = 79
+1723652686.441 vkey_map: P = 80
+1723652686.441 vkey_map: Q = 81
+1723652686.441 vkey_map: R = 82
+1723652686.441 vkey_map: S = 83
+1723652686.441 vkey_map: T = 84
+1723652686.441 vkey_map: U = 85
+1723652686.441 vkey_map: V = 86
+1723652686.441 vkey_map: W = 87
+1723652686.441 vkey_map: X = 88
+1723652686.441 vkey_map: Y = 89
+1723652686.441 vkey_map: Z = 90
+1723652686.441 vkey_map: [ = 91
+1723652686.441 vkey_map: \ = 92
+1723652686.441 vkey_map: ] = 93
+1723652686.441 vkey_map: ^ = 94
+1723652686.441 vkey_map: _ = 95
+1723652686.441 vkey_map: ` = 96
+1723652686.441 vkey_map: A = 97
+1723652686.441 vkey_map: B = 98
+1723652686.441 vkey_map: C = 99
+1723652686.441 vkey_map: D = 100
+1723652686.441 vkey_map: E = 101
+1723652686.441 vkey_map: F = 102
+1723652686.441 vkey_map: G = 103
+1723652686.441 vkey_map: H = 104
+1723652686.441 vkey_map: I = 105
+1723652686.441 vkey_map: J = 106
+1723652686.441 vkey_map: K = 107
+1723652686.441 vkey_map: L = 108
+1723652686.441 vkey_map: M = 109
+1723652686.441 vkey_map: N = 110
+1723652686.441 vkey_map: O = 111
+1723652686.441 vkey_map: P = 112
+1723652686.441 vkey_map: Q = 113
+1723652686.441 vkey_map: R = 114
+1723652686.441 vkey_map: S = 115
+1723652686.441 vkey_map: T = 116
+1723652686.441 vkey_map: U = 117
+1723652686.441 vkey_map: V = 118
+1723652686.441 vkey_map: W = 119
+1723652686.441 vkey_map: X = 120
+1723652686.441 vkey_map: Y = 121
+1723652686.441 vkey_map: Z = 122
+1723652686.441 vkey_map: { = 123
+1723652686.441 vkey_map: | = 124
+1723652686.441 vkey_map: } = 125
+1723652686.441 vkey_map: ~ = 126
+1723652686.441 vkey_map: Delete = 127
+1723652686.441 vkey_map:  = 128
+1723652686.441 vkey_map:  = 129
+1723652686.441 vkey_map:  = 130
+1723652686.441 vkey_map:  = 131
+1723652686.441 vkey_map:  = 132
+1723652686.441 vkey_map:  = 133
+1723652686.441 vkey_map:  = 134
+1723652686.441 vkey_map:  = 135
+1723652686.441 vkey_map:  = 136
+1723652686.441 vkey_map:  = 137
+1723652686.441 vkey_map:  = 138
+1723652686.441 vkey_map:  = 139
+1723652686.441 vkey_map:  = 140
+1723652686.441 vkey_map:  = 141
+1723652686.441 vkey_map:  = 142
+1723652686.441 vkey_map:  = 143
+1723652686.441 vkey_map:  = 144
+1723652686.441 vkey_map:  = 145
+1723652686.441 vkey_map:  = 146
+1723652686.441 vkey_map:  = 147
+1723652686.441 vkey_map:  = 148
+1723652686.441 vkey_map:  = 149
+1723652686.441 vkey_map:  = 150
+1723652686.441 vkey_map:  = 151
+1723652686.442 vkey_map:  = 152
+1723652686.442 vkey_map:  = 153
+1723652686.442 vkey_map:  = 154
+1723652686.442 vkey_map:  = 155
+1723652686.442 vkey_map:  = 156
+1723652686.442 vkey_map:  = 157
+1723652686.442 vkey_map:  = 158
+1723652686.442 vkey_map:  = 159
+1723652686.442 vkey_map:   = 160
+1723652686.442 vkey_map: ¡ = 161
+1723652686.442 vkey_map: ¢ = 162
+1723652686.442 vkey_map: £ = 163
+1723652686.442 vkey_map: ¤ = 164
+1723652686.442 vkey_map: ¥ = 165
+1723652686.442 vkey_map: ¦ = 166
+1723652686.442 vkey_map: § = 167
+1723652686.442 vkey_map: ¨ = 168
+1723652686.442 vkey_map: © = 169
+1723652686.442 vkey_map: ª = 170
+1723652686.442 vkey_map: « = 171
+1723652686.442 vkey_map: ¬ = 172
+1723652686.442 vkey_map:  = 173
+1723652686.442 vkey_map: ® = 174
+1723652686.442 vkey_map: ¯ = 175
+1723652686.442 vkey_map: ° = 176
+1723652686.442 vkey_map: ± = 177
+1723652686.442 vkey_map: ² = 178
+1723652686.442 vkey_map: ³ = 179
+1723652686.442 vkey_map: ´ = 180
+1723652686.442 vkey_map: µ = 181
+1723652686.442 vkey_map: ¶ = 182
+1723652686.442 vkey_map: · = 183
+1723652686.443 vkey_map: ¸ = 184
+1723652686.443 vkey_map: ¹ = 185
+1723652686.443 vkey_map: º = 186
+1723652686.443 vkey_map: » = 187
+1723652686.443 vkey_map: ¼ = 188
+1723652686.443 vkey_map: ½ = 189
+1723652686.443 vkey_map: ¾ = 190
+1723652686.443 vkey_map: ¿ = 191
+1723652686.443 vkey_map: À = 192
+1723652686.443 vkey_map: Á = 193
+1723652686.443 vkey_map: Â = 194
+1723652686.443 vkey_map: Ã = 195
+1723652686.443 vkey_map: Ä = 196
+1723652686.443 vkey_map: Å = 197
+1723652686.443 vkey_map: Æ = 198
+1723652686.443 vkey_map: Ç = 199
+1723652686.443 vkey_map: È = 200
+1723652686.443 vkey_map: É = 201
+1723652686.443 vkey_map: Ê = 202
+1723652686.443 vkey_map: Ë = 203
+1723652686.443 vkey_map: Ì = 204
+1723652686.443 vkey_map: Í = 205
+1723652686.443 vkey_map: Î = 206
+1723652686.443 vkey_map: Ï = 207
+1723652686.443 vkey_map: Ð = 208
+1723652686.443 vkey_map: Ñ = 209
+1723652686.443 vkey_map: Ò = 210
+1723652686.443 vkey_map: Ó = 211
+1723652686.443 vkey_map: Ô = 212
+1723652686.443 vkey_map: Õ = 213
+1723652686.443 vkey_map: Ö = 214
+1723652686.443 vkey_map: × = 215
+1723652686.443 vkey_map: Ø = 216
+1723652686.443 vkey_map: Ù = 217
+1723652686.443 vkey_map: Ú = 218
+1723652686.443 vkey_map: Û = 219
+1723652686.443 vkey_map: Ü = 220
+1723652686.443 vkey_map: Ý = 221
+1723652686.443 vkey_map: Þ = 222
+1723652686.443 vkey_map: ß = 223
+1723652686.443 vkey_map: à = 224
+1723652686.443 vkey_map: á = 225
+1723652686.443 vkey_map: â = 226
+1723652686.443 vkey_map: ã = 227
+1723652686.443 vkey_map: ä = 228
+1723652686.443 vkey_map: å = 229
+1723652686.443 vkey_map: æ = 230
+1723652686.443 vkey_map: ç = 231
+1723652686.443 vkey_map: è = 232
+1723652686.443 vkey_map: é = 233
+1723652686.443 vkey_map: ê = 234
+1723652686.443 vkey_map: ë = 235
+1723652686.443 vkey_map: ì = 236
+1723652686.443 vkey_map: í = 237
+1723652686.443 vkey_map: î = 238
+1723652686.443 vkey_map: ï = 239
+1723652686.443 vkey_map: ð = 240
+1723652686.443 vkey_map: ñ = 241
+1723652686.443 vkey_map: ò = 242
+1723652686.443 vkey_map: ó = 243
+1723652686.443 vkey_map: ô = 244
+1723652686.443 vkey_map: õ = 245
+1723652686.443 vkey_map: ö = 246
+1723652686.443 vkey_map: ÷ = 247
+1723652686.443 vkey_map: ø = 248
+1723652686.443 vkey_map: ù = 249
+1723652686.443 vkey_map: ú = 250
+1723652686.444 vkey_map: û = 251
+1723652686.444 vkey_map: ü = 252
+1723652686.444 vkey_map: ý = 253
+1723652686.444 vkey_map: þ = 254
+1723652686.444 vkey_map: ÿ = 255
+1723652686.444 vkey_map: Ā = 256
+1723652686.444 vkey_map: ā = 257
+1723652686.444 vkey_map: Ă = 258
+1723652686.444 vkey_map: ă = 259
+1723652686.444 vkey_map: Ą = 260
+1723652686.444 vkey_map: ą = 261
+1723652686.444 vkey_map: Ć = 262
+1723652686.444 vkey_map: ć = 263
+1723652686.444 vkey_map: Ĉ = 264
+1723652686.444 vkey_map: ĉ = 265
+1723652686.444 vkey_map: Ċ = 266
+1723652686.444 vkey_map: ċ = 267
+1723652686.444 vkey_map: Č = 268
+1723652686.444 vkey_map: č = 269
+1723652686.444 vkey_map: Ď = 270
+1723652686.444 vkey_map: ď = 271
+1723652686.444 vkey_map: Đ = 272
+1723652686.444 vkey_map: đ = 273
+1723652686.444 vkey_map: Ē = 274
+1723652686.445 vkey_map: ē = 275
+1723652686.445 vkey_map: Ĕ = 276
+1723652686.445 vkey_map: ĕ = 277
+1723652686.445 vkey_map: Ė = 278
+1723652686.445 vkey_map: ė = 279
+1723652686.445 vkey_map: Ę = 280
+1723652686.445 vkey_map: ę = 281
+1723652686.445 vkey_map: Ě = 282
+1723652686.445 vkey_map: ě = 283
+1723652686.445 vkey_map: Ĝ = 284
+1723652686.445 vkey_map: ĝ = 285
+1723652686.445 vkey_map: Ğ = 286
+1723652686.445 vkey_map: ğ = 287
+1723652686.445 vkey_map: Ġ = 288
+1723652686.445 vkey_map: ġ = 289
+1723652686.445 vkey_map: Ģ = 290
+1723652686.445 vkey_map: ģ = 291
+1723652686.445 vkey_map: Ĥ = 292
+1723652686.445 vkey_map: ĥ = 293
+1723652686.445 vkey_map: Ħ = 294
+1723652686.445 vkey_map: ħ = 295
+1723652686.445 vkey_map: Ĩ = 296
+1723652686.445 vkey_map: ĩ = 297
+1723652686.445 vkey_map: Ī = 298
+1723652686.445 vkey_map: ī = 299
+1723652686.445 vkey_map: Ĭ = 300
+1723652686.445 vkey_map: ĭ = 301
+1723652686.445 vkey_map: Į = 302
+1723652686.445 vkey_map: į = 303
+1723652686.445 vkey_map: İ = 304
+1723652686.445 vkey_map: ı = 305
+1723652686.445 vkey_map: Ĳ = 306
+1723652686.445 vkey_map: ĳ = 307
+1723652686.445 vkey_map: Ĵ = 308
+1723652686.445 vkey_map: ĵ = 309
+1723652686.445 vkey_map: Ķ = 310
+1723652686.445 vkey_map: ķ = 311
+1723652686.445 vkey_map: ĸ = 312
+1723652686.445 vkey_map: Ĺ = 313
+1723652686.445 vkey_map: ĺ = 314
+1723652686.445 vkey_map: Ļ = 315
+1723652686.445 vkey_map: ļ = 316
+1723652686.445 vkey_map: Ľ = 317
+1723652686.445 vkey_map: ľ = 318
+1723652686.445 vkey_map: Ŀ = 319
+1723652686.445 vkey_map: ŀ = 320
+1723652686.445 vkey_map: Ł = 321
+1723652686.445 vkey_map: ł = 322
+1723652686.445 vkey_map: Ń = 323
+1723652686.445 vkey_map: ń = 324
+1723652686.445 vkey_map: Ņ = 325
+1723652686.446 vkey_map: ņ = 326
+1723652686.446 vkey_map: Ň = 327
+1723652686.446 vkey_map: ň = 328
+1723652686.446 vkey_map: ŉ = 329
+1723652686.446 vkey_map: Ŋ = 330
+1723652686.446 vkey_map: ŋ = 331
+1723652686.446 vkey_map: Ō = 332
+1723652686.446 vkey_map: ō = 333
+1723652686.446 vkey_map: Ŏ = 334
+1723652686.446 vkey_map: ŏ = 335
+1723652686.446 vkey_map: Ő = 336
+1723652686.446 vkey_map: ő = 337
+1723652686.446 vkey_map: Œ = 338
+1723652686.446 vkey_map: œ = 339
+1723652686.446 vkey_map: Ŕ = 340
+1723652686.446 vkey_map: ŕ = 341
+1723652686.446 vkey_map: Ŗ = 342
+1723652686.446 vkey_map: ŗ = 343
+1723652686.446 vkey_map: Ř = 344
+1723652686.446 vkey_map: ř = 345
+1723652686.446 vkey_map: Ś = 346
+1723652686.446 vkey_map: ś = 347
+1723652686.446 vkey_map: Ŝ = 348
+1723652686.446 vkey_map: ŝ = 349
+1723652686.446 vkey_map: Ş = 350
+1723652686.446 vkey_map: ş = 351
+1723652686.446 vkey_map: Š = 352
+1723652686.446 vkey_map: š = 353
+1723652686.446 vkey_map: Ţ = 354
+1723652686.446 vkey_map: ţ = 355
+1723652686.446 vkey_map: Ť = 356
+1723652686.446 vkey_map: ť = 357
+1723652686.446 vkey_map: Ŧ = 358
+1723652686.446 vkey_map: ŧ = 359
+1723652686.446 vkey_map: Ũ = 360
+1723652686.446 vkey_map: ũ = 361
+1723652686.446 vkey_map: Ū = 362
+1723652686.446 vkey_map: ū = 363
+1723652686.446 vkey_map: Ŭ = 364
+1723652686.446 vkey_map: ŭ = 365
+1723652686.446 vkey_map: Ů = 366
+1723652686.446 vkey_map: ů = 367
+1723652686.446 vkey_map: Ű = 368
+1723652686.446 vkey_map: ű = 369
+1723652686.446 vkey_map: Ų = 370
+1723652686.446 vkey_map: ų = 371
+1723652686.446 vkey_map: Ŵ = 372
+1723652686.446 vkey_map: ŵ = 373
+1723652686.446 vkey_map: Ŷ = 374
+1723652686.446 vkey_map: ŷ = 375
+1723652686.446 vkey_map: Ÿ = 376
+1723652686.446 vkey_map: Ź = 377
+1723652686.446 vkey_map: ź = 378
+1723652686.446 vkey_map: Ż = 379
+1723652686.446 vkey_map: ż = 380
+1723652686.446 vkey_map: Ž = 381
+1723652686.446 vkey_map: ž = 382
+1723652686.446 vkey_map: ſ = 383
+1723652686.446 vkey_map: ƀ = 384
+1723652686.446 vkey_map: Ɓ = 385
+1723652686.446 vkey_map: Ƃ = 386
+1723652686.447 vkey_map: ƃ = 387
+1723652686.447 vkey_map: Ƅ = 388
+1723652686.447 vkey_map: ƅ = 389
+1723652686.447 vkey_map: Ɔ = 390
+1723652686.447 vkey_map: Ƈ = 391
+1723652686.447 vkey_map: ƈ = 392
+1723652686.447 vkey_map: Ɖ = 393
+1723652686.447 vkey_map: Ɗ = 394
+1723652686.447 vkey_map: Ƌ = 395
+1723652686.447 vkey_map: ƌ = 396
+1723652686.447 vkey_map: ƍ = 397
+1723652686.447 vkey_map: Ǝ = 398
+1723652686.447 vkey_map: Ə = 399
+1723652686.447 vkey_map: Ɛ = 400
+1723652686.447 vkey_map: Ƒ = 401
+1723652686.447 vkey_map: ƒ = 402
+1723652686.447 vkey_map: Ɠ = 403
+1723652686.447 vkey_map: Ɣ = 404
+1723652686.447 vkey_map: ƕ = 405
+1723652686.447 vkey_map: Ɩ = 406
+1723652686.447 vkey_map: Ɨ = 407
+1723652686.447 vkey_map: Ƙ = 408
+1723652686.447 vkey_map: ƙ = 409
+1723652686.447 vkey_map: ƚ = 410
+1723652686.447 vkey_map: ƛ = 411
+1723652686.447 vkey_map: Ɯ = 412
+1723652686.447 vkey_map: Ɲ = 413
+1723652686.447 vkey_map: ƞ = 414
+1723652686.447 vkey_map: Ɵ = 415
+1723652686.447 vkey_map: Ơ = 416
+1723652686.447 vkey_map: ơ = 417
+1723652686.447 vkey_map: Ƣ = 418
+1723652686.447 vkey_map: ƣ = 419
+1723652686.447 vkey_map: Ƥ = 420
+1723652686.447 vkey_map: ƥ = 421
+1723652686.447 vkey_map: Ʀ = 422
+1723652686.447 vkey_map: Ƨ = 423
+1723652686.447 vkey_map: ƨ = 424
+1723652686.447 vkey_map: Ʃ = 425
+1723652686.447 vkey_map: ƪ = 426
+1723652686.447 vkey_map: ƫ = 427
+1723652686.447 vkey_map: Ƭ = 428
+1723652686.447 vkey_map: ƭ = 429
+1723652686.447 vkey_map: Ʈ = 430
+1723652686.447 vkey_map: Ư = 431
+1723652686.447 vkey_map: ư = 432
+1723652686.447 vkey_map: Ʊ = 433
+1723652686.447 vkey_map: Ʋ = 434
+1723652686.447 vkey_map: Ƴ = 435
+1723652686.447 vkey_map: ƴ = 436
+1723652686.447 vkey_map: Ƶ = 437
+1723652686.447 vkey_map: ƶ = 438
+1723652686.447 vkey_map: Ʒ = 439
+1723652686.447 vkey_map: Ƹ = 440
+1723652686.447 vkey_map: ƹ = 441
+1723652686.447 vkey_map: ƺ = 442
+1723652686.447 vkey_map: ƻ = 443
+1723652686.447 vkey_map: Ƽ = 444
+1723652686.447 vkey_map: ƽ = 445
+1723652686.447 vkey_map: ƾ = 446
+1723652686.447 vkey_map: ƿ = 447
+1723652686.447 vkey_map: ǀ = 448
+1723652686.447 vkey_map: ǁ = 449
+1723652686.447 vkey_map: ǂ = 450
+1723652686.447 vkey_map: ǃ = 451
+1723652686.447 vkey_map: Ǆ = 452
+1723652686.447 vkey_map: ǅ = 453
+1723652686.447 vkey_map: ǆ = 454
+1723652686.447 vkey_map: Ǉ = 455
+1723652686.447 vkey_map: ǈ = 456
+1723652686.447 vkey_map: ǉ = 457
+1723652686.447 vkey_map: Ǌ = 458
+1723652686.447 vkey_map: ǋ = 459
+1723652686.447 vkey_map: ǌ = 460
+1723652686.447 vkey_map: Ǎ = 461
+1723652686.447 vkey_map: ǎ = 462
+1723652686.447 vkey_map: Ǐ = 463
+1723652686.447 vkey_map: ǐ = 464
+1723652686.447 vkey_map: Ǒ = 465
+1723652686.447 vkey_map: ǒ = 466
+1723652686.448 vkey_map: Ǔ = 467
+1723652686.448 vkey_map: ǔ = 468
+1723652686.448 vkey_map: Ǖ = 469
+1723652686.448 vkey_map: ǖ = 470
+1723652686.448 vkey_map: Ǘ = 471
+1723652686.448 vkey_map: ǘ = 472
+1723652686.448 vkey_map: Ǚ = 473
+1723652686.448 vkey_map: ǚ = 474
+1723652686.448 vkey_map: Ǜ = 475
+1723652686.448 vkey_map: ǜ = 476
+1723652686.448 vkey_map: ǝ = 477
+1723652686.448 vkey_map: Ǟ = 478
+1723652686.448 vkey_map: ǟ = 479
+1723652686.448 vkey_map: Ǡ = 480
+1723652686.448 vkey_map: ǡ = 481
+1723652686.448 vkey_map: Ǣ = 482
+1723652686.448 vkey_map: ǣ = 483
+1723652686.448 vkey_map: Ǥ = 484
+1723652686.448 vkey_map: ǥ = 485
+1723652686.448 vkey_map: Ǧ = 486
+1723652686.448 vkey_map: ǧ = 487
+1723652686.448 vkey_map: Ǩ = 488
+1723652686.448 vkey_map: ǩ = 489
+1723652686.448 vkey_map: Ǫ = 490
+1723652686.448 vkey_map: ǫ = 491
+1723652686.448 vkey_map: Ǭ = 492
+1723652686.448 vkey_map: ǭ = 493
+1723652686.448 vkey_map: Ǯ = 494
+1723652686.448 vkey_map: ǯ = 495
+1723652686.448 vkey_map: ǰ = 496
+1723652686.448 vkey_map: Ǳ = 497
+1723652686.448 vkey_map: ǲ = 498
+1723652686.449 vkey_map: ǳ = 499
+1723652686.449 vkey_map: Ǵ = 500
+1723652686.449 vkey_map: ǵ = 501
+1723652686.449 vkey_map: Ƕ = 502
+1723652686.449 vkey_map: Ƿ = 503
+1723652686.449 vkey_map: Ǹ = 504
+1723652686.449 vkey_map: ǹ = 505
+1723652686.449 vkey_map: Ǻ = 506
+1723652686.449 vkey_map: ǻ = 507
+1723652686.449 vkey_map: Ǽ = 508
+1723652686.449 vkey_map: ǽ = 509
+1723652686.449 vkey_map: Ǿ = 510
+1723652686.449 vkey_map: ǿ = 511
+1723652686.449 vkey_map: Ȁ = 512
+1723652686.449 vkey_map: left_mouse = 513
+1723652686.449 vkey_map: middle_mouse = 514
+1723652686.449 vkey_map: right_mouse = 515
+1723652686.449 vkey_map: up_mouse = 516
+1723652686.449 vkey_map: down_mouse = 517
+1723652686.449 vkey_map: mouse_5 = 518
+1723652686.449 vkey_map: mouse_6 = 519
+1723652686.449 vkey_map: mouse_7 = 520
+1723652686.449 vkey_map: mouse_8 = 521
+1723652686.449 vkey_map: mouse_9 = 522
+1723652686.449 vkey_map: mouse_10 = 523
+1723652686.449 vkey_map: mouse_11 = 524
+1723652686.449 vkey_map: mouse_12 = 525
+1723652686.449 vkey_map: mouse_13 = 526
+1723652686.449 vkey_map: mouse_14 = 527
+1723652686.449 vkey_map: mouse_15 = 528
+1723652686.449 vkey_map: mouse_16 = 529
+1723652686.449 vkey_map: mouse_17 = 530
+1723652686.449 vkey_map: mouse_18 = 531
+1723652686.449 vkey_map: mouse_19 = 532
+1723652686.449 vkey_map: mouse_20 = 533
+1723652686.449 vkey_map: mouse_21 = 534
+1723652686.449 vkey_map: mouse_22 = 535
+1723652686.449 vkey_map: mouse_23 = 536
+1723652686.449 vkey_map: mouse_24 = 537
+1723652686.449 vkey_map: mouse_25 = 538
+1723652686.449 vkey_map: mouse_26 = 539
+1723652686.449 vkey_map: mouse_27 = 540
+1723652686.449 vkey_map: mouse_28 = 541
+1723652686.449 vkey_map: mouse_29 = 542
+1723652686.449 vkey_map: mouse_30 = 543
+1723652686.449 vkey_map: mouse_31 = 544
+1723652686.449 vkey_map: mouse_32 = 545
+1723652686.449 vkey_map: mouse_33 = 546
+1723652686.449 vkey_map: mouse_34 = 547
+1723652686.449 vkey_map: mouse_35 = 548
+1723652686.449 vkey_map: mouse_36 = 549
+1723652686.450 vkey_map: mouse_37 = 550
+1723652686.450 vkey_map: mouse_38 = 551
+1723652686.450 vkey_map: mouse_39 = 552
+1723652686.450 vkey_map: mouse_40 = 553
+1723652686.450 vkey_map: mouse_41 = 554
+1723652686.450 vkey_map: mouse_42 = 555
+1723652686.450 vkey_map: mouse_43 = 556
+1723652686.450 vkey_map: mouse_44 = 557
+1723652686.450 vkey_map: mouse_45 = 558
+1723652686.450 vkey_map: mouse_46 = 559
+1723652686.450 vkey_map: mouse_47 = 560
+1723652686.450 vkey_map: mouse_48 = 561
+1723652686.450 vkey_map: mouse_49 = 562
+1723652686.450 vkey_map: mouse_50 = 563
+1723652686.450 vkey_map: mouse_51 = 564
+1723652686.450 vkey_map: mouse_52 = 565
+1723652686.450 vkey_map: mouse_53 = 566
+1723652686.450 vkey_map: mouse_54 = 567
+1723652686.450 vkey_map: mouse_55 = 568
+1723652686.450 vkey_map: mouse_56 = 569
+1723652686.450 vkey_map: mouse_57 = 570
+1723652686.450 vkey_map: mouse_58 = 571
+1723652686.450 vkey_map: mouse_59 = 572
+1723652686.450 vkey_map: mouse_60 = 573
+1723652686.450 vkey_map: mouse_61 = 574
+1723652686.450 vkey_map: mouse_62 = 575
+1723652686.450 vkey_map: mouse_63 = 576
+1723652686.450 vkey_map: mouse_64 = 577
+1723652686.450 vkey_map: mouse_65 = 578
+1723652686.450 vkey_map: mouse_66 = 579
+1723652686.450 vkey_map: mouse_67 = 580
+1723652686.450 vkey_map: mouse_68 = 581
+1723652686.450 vkey_map: mouse_69 = 582
+1723652686.450 vkey_map: mouse_70 = 583
+1723652686.450 vkey_map: mouse_71 = 584
+1723652686.450 vkey_map: mouse_72 = 585
+1723652686.450 vkey_map: mouse_73 = 586
+1723652686.450 vkey_map: mouse_74 = 587
+1723652686.450 vkey_map: mouse_75 = 588
+1723652686.450 vkey_map: mouse_76 = 589
+1723652686.450 vkey_map: mouse_77 = 590
+1723652686.450 vkey_map: mouse_78 = 591
+1723652686.450 vkey_map: mouse_79 = 592
+1723652686.450 vkey_map: mouse_80 = 593
+1723652686.450 vkey_map: mouse_81 = 594
+1723652686.450 vkey_map: mouse_82 = 595
+1723652686.450 vkey_map: mouse_83 = 596
+1723652686.450 vkey_map: mouse_84 = 597
+1723652686.450 vkey_map: mouse_85 = 598
+1723652686.451 vkey_map: mouse_86 = 599
+1723652686.451 vkey_map: mouse_87 = 600
+1723652686.451 vkey_map: mouse_88 = 601
+1723652686.451 vkey_map: mouse_89 = 602
+1723652686.451 vkey_map: mouse_90 = 603
+1723652686.451 vkey_map: mouse_91 = 604
+1723652686.451 vkey_map: mouse_92 = 605
+1723652686.451 vkey_map: mouse_93 = 606
+1723652686.451 vkey_map: mouse_94 = 607
+1723652686.451 vkey_map: mouse_95 = 608
+1723652686.451 vkey_map: mouse_96 = 609
+1723652686.451 vkey_map: mouse_97 = 610
+1723652686.451 vkey_map: mouse_98 = 611
+1723652686.451 vkey_map: mouse_99 = 612
+1723652686.451 vkey_map: mouse_100 = 613
+1723652686.451 vkey_map: mouse_101 = 614
+1723652686.451 vkey_map: mouse_102 = 615
+1723652686.451 vkey_map: mouse_103 = 616
+1723652686.451 vkey_map: mouse_104 = 617
+1723652686.451 vkey_map: mouse_105 = 618
+1723652686.451 vkey_map: mouse_106 = 619
+1723652686.451 vkey_map: mouse_107 = 620
+1723652686.451 vkey_map: mouse_108 = 621
+1723652686.451 vkey_map: mouse_109 = 622
+1723652686.451 vkey_map: mouse_110 = 623
+1723652686.451 vkey_map: mouse_111 = 624
+1723652686.451 vkey_map: mouse_112 = 625
+1723652686.451 vkey_map: mouse_113 = 626
+1723652686.451 vkey_map: mouse_114 = 627
+1723652686.451 vkey_map: mouse_115 = 628
+1723652686.451 vkey_map: mouse_116 = 629
+1723652686.451 vkey_map: mouse_117 = 630
+1723652686.451 vkey_map: mouse_118 = 631
+1723652686.451 vkey_map: mouse_119 = 632
+1723652686.451 vkey_map: mouse_120 = 633
+1723652686.451 vkey_map: mouse_121 = 634
+1723652686.451 vkey_map: mouse_122 = 635
+1723652686.451 vkey_map: mouse_123 = 636
+1723652686.451 vkey_map: mouse_124 = 637
+1723652686.451 vkey_map: mouse_125 = 638
+1723652686.451 vkey_map: mouse_126 = 639
+1723652686.451 vkey_map: mouse_127 = 640
+1723652686.451 vkey_map: mouse_128 = 641
+1723652686.451 vkey_map: mouse_129 = 642
+1723652686.451 vkey_map: mouse_130 = 643
+1723652686.451 vkey_map: mouse_131 = 644
+1723652686.451 vkey_map: mouse_132 = 645
+1723652686.451 vkey_map: mouse_133 = 646
+1723652686.451 vkey_map: mouse_134 = 647
+1723652686.451 vkey_map: mouse_135 = 648
+1723652686.451 vkey_map: mouse_136 = 649
+1723652686.451 vkey_map: mouse_137 = 650
+1723652686.451 vkey_map: mouse_138 = 651
+1723652686.451 vkey_map: mouse_139 = 652
+1723652686.451 vkey_map: mouse_140 = 653
+1723652686.451 vkey_map: mouse_141 = 654
+1723652686.451 vkey_map: mouse_142 = 655
+1723652686.451 vkey_map: mouse_143 = 656
+1723652686.451 vkey_map: mouse_144 = 657
+1723652686.451 vkey_map: mouse_145 = 658
+1723652686.451 vkey_map: mouse_146 = 659
+1723652686.451 vkey_map: mouse_147 = 660
+1723652686.451 vkey_map: mouse_148 = 661
+1723652686.451 vkey_map: mouse_149 = 662
+1723652686.451 vkey_map: mouse_150 = 663
+1723652686.451 vkey_map: mouse_151 = 664
+1723652686.451 vkey_map: mouse_152 = 665
+1723652686.451 vkey_map: mouse_153 = 666
+1723652686.451 vkey_map: mouse_154 = 667
+1723652686.451 vkey_map: mouse_155 = 668
+1723652686.451 vkey_map: mouse_156 = 669
+1723652686.451 vkey_map: mouse_157 = 670
+1723652686.452 vkey_map: mouse_158 = 671
+1723652686.452 vkey_map: mouse_159 = 672
+1723652686.452 vkey_map: mouse_160 = 673
+1723652686.452 vkey_map: mouse_161 = 674
+1723652686.452 vkey_map: mouse_162 = 675
+1723652686.452 vkey_map: mouse_163 = 676
+1723652686.452 vkey_map: mouse_164 = 677
+1723652686.452 vkey_map: mouse_165 = 678
+1723652686.452 vkey_map: mouse_166 = 679
+1723652686.452 vkey_map: mouse_167 = 680
+1723652686.452 vkey_map: mouse_168 = 681
+1723652686.452 vkey_map: mouse_169 = 682
+1723652686.452 vkey_map: mouse_170 = 683
+1723652686.452 vkey_map: mouse_171 = 684
+1723652686.452 vkey_map: mouse_172 = 685
+1723652686.452 vkey_map: mouse_173 = 686
+1723652686.452 vkey_map: mouse_174 = 687
+1723652686.452 vkey_map: mouse_175 = 688
+1723652686.452 vkey_map: mouse_176 = 689
+1723652686.452 vkey_map: mouse_177 = 690
+1723652686.452 vkey_map: mouse_178 = 691
+1723652686.452 vkey_map: mouse_179 = 692
+1723652686.452 vkey_map: mouse_180 = 693
+1723652686.452 vkey_map: mouse_181 = 694
+1723652686.452 vkey_map: mouse_182 = 695
+1723652686.452 vkey_map: mouse_183 = 696
+1723652686.452 vkey_map: mouse_184 = 697
+1723652686.452 vkey_map: mouse_185 = 698
+1723652686.452 vkey_map: mouse_186 = 699
+1723652686.452 vkey_map: mouse_187 = 700
+1723652686.452 vkey_map: mouse_188 = 701
+1723652686.452 vkey_map: mouse_189 = 702
+1723652686.452 vkey_map: mouse_190 = 703
+1723652686.452 vkey_map: mouse_191 = 704
+1723652686.453 vkey_map: mouse_192 = 705
+1723652686.453 vkey_map: mouse_193 = 706
+1723652686.453 vkey_map: mouse_194 = 707
+1723652686.453 vkey_map: mouse_195 = 708
+1723652686.453 vkey_map: mouse_196 = 709
+1723652686.453 vkey_map: mouse_197 = 710
+1723652686.453 vkey_map: mouse_198 = 711
+1723652686.453 vkey_map: mouse_199 = 712
+1723652686.453 vkey_map: mouse_200 = 713
+1723652686.453 vkey_map: mouse_201 = 714
+1723652686.453 vkey_map: mouse_202 = 715
+1723652686.453 vkey_map: mouse_203 = 716
+1723652686.453 vkey_map: mouse_204 = 717
+1723652686.453 vkey_map: mouse_205 = 718
+1723652686.453 vkey_map: mouse_206 = 719
+1723652686.453 vkey_map: mouse_207 = 720
+1723652686.453 vkey_map: mouse_208 = 721
+1723652686.453 vkey_map: mouse_209 = 722
+1723652686.453 vkey_map: mouse_210 = 723
+1723652686.453 vkey_map: mouse_211 = 724
+1723652686.453 vkey_map: mouse_212 = 725
+1723652686.453 vkey_map: mouse_213 = 726
+1723652686.453 vkey_map: mouse_214 = 727
+1723652686.453 vkey_map: mouse_215 = 728
+1723652686.453 vkey_map: mouse_216 = 729
+1723652686.453 vkey_map: mouse_217 = 730
+1723652686.453 vkey_map: mouse_218 = 731
+1723652686.453 vkey_map: mouse_219 = 732
+1723652686.453 vkey_map: mouse_220 = 733
+1723652686.453 vkey_map: mouse_221 = 734
+1723652686.453 vkey_map: mouse_222 = 735
+1723652686.454 vkey_map: mouse_223 = 736
+1723652686.454 vkey_map: mouse_224 = 737
+1723652686.454 vkey_map: mouse_225 = 738
+1723652686.454 vkey_map: mouse_226 = 739
+1723652686.454 vkey_map: mouse_227 = 740
+1723652686.454 vkey_map: mouse_228 = 741
+1723652686.454 vkey_map: mouse_229 = 742
+1723652686.454 vkey_map: mouse_230 = 743
+1723652686.454 vkey_map: mouse_231 = 744
+1723652686.454 vkey_map: mouse_232 = 745
+1723652686.454 vkey_map: mouse_233 = 746
+1723652686.454 vkey_map: mouse_234 = 747
+1723652686.454 vkey_map: mouse_235 = 748
+1723652686.454 vkey_map: mouse_236 = 749
+1723652686.454 vkey_map: mouse_237 = 750
+1723652686.455 vkey_map: mouse_238 = 751
+1723652686.455 vkey_map: mouse_239 = 752
+1723652686.455 vkey_map: mouse_240 = 753
+1723652686.455 vkey_map: mouse_241 = 754
+1723652686.455 vkey_map: mouse_242 = 755
+1723652686.455 vkey_map: mouse_243 = 756
+1723652686.455 vkey_map: mouse_244 = 757
+1723652686.455 vkey_map: mouse_245 = 758
+1723652686.455 vkey_map: mouse_246 = 759
+1723652686.455 vkey_map: mouse_247 = 760
+1723652686.455 vkey_map: mouse_248 = 761
+1723652686.455 vkey_map: mouse_249 = 762
+1723652686.455 vkey_map: mouse_250 = 763
+1723652686.455 vkey_map: mouse_251 = 764
+1723652686.455 vkey_map: mouse_252 = 765
+1723652686.455 vkey_map: mouse_253 = 766
+1723652686.455 vkey_map: mouse_254 = 767
+1723652686.455 vkey_map: ̀ = 768
+1723652686.456 read_config: finished reading 'Player.txt'
+1723652686.456 DefaultJoystickSettings: player 'Player'
+1723652686.456 DefaultJoystickSettings: player 'Player' joystick #0='FIXME' connected=1 assigned=0
+1723652686.456 DefaultJoystickSettings: player 'Player' joystick #0='FIXME' configuring normally
+1723652686.456 DefaultJoystickSettings: player 'Player' joystick #1='Joystick' connected=0 assigned=1
+1723652686.463 InitView Starting...
+1723652686.463 Initializing sound.
+[New Thread 0x7feffff160 (LWP 119876)]
+[New Thread 0x7fef7ef160 (LWP 119877)]
+[New Thread 0x7feefdf160 (LWP 119878)]
+[New Thread 0x7fee7cf160 (LWP 119879)]
+1723652686.686 listener gain: 0.500000
+1723652686.686 listener position: 0.000000 0.000000 0.000000
+1723652686.686 openal: info start
+1723652686.687 EAX2.0 support = false
+1723652686.687 default playback: OpenAL Soft
+1723652686.690 default capture: ALSA Default
+1723652686.690 playback: OpenAL Soft
+1723652686.691 capture: ALSA Default
+1723652686.691 capture: rk817_int, fe410000.i2s-rk817-hifi rk817-hifi-0 (CARD=rk817int,DEV=0)
+1723652686.691 Default device: OpenAL Soft
+1723652686.691 Default capture device: ALSA Default
+1723652686.691 ALC version: 1.1
+1723652686.691 ALC extensions: ALC_ENUMERATE_ALL_EXT ALC_ENUMERATION_EXT ALC_EXT_CAPTURE ALC_EXT_debug ALC_EXT_DEDICATED ALC_EXTX_direct_context ALC_EXT_disconnect ALC_EXT_EFX ALC_EXT_thread_local_context ALC_SOFT_device_clock ALC_SOFT_HRTF ALC_SOFT_loopback ALC_SOFT_loopback_bformat ALC_SOFT_output_limiter ALC_SOFT_output_mode ALC_SOFT_pause_device ALC_SOFT_reopen_device ALC_SOFT_system_events
+1723652686.691 OpenAL vendor string: OpenAL Community
+1723652686.691 OpenAL renderer string: OpenAL Soft
+1723652686.691 OpenAL version string: 1.1 ALSOFT 1.23.1
+1723652686.691 OpenAL extensions: AL_EXT_ALAW AL_EXT_BFORMAT AL_EXT_debug AL_EXTX_direct_context AL_EXT_DOUBLE AL_EXT_EXPONENT_DISTANCE AL_EXT_FLOAT32 AL_EXT_IMA4 AL_EXT_LINEAR_DISTANCE AL_EXT_MCFORMATS AL_EXT_MULAW AL_EXT_MULAW_BFORMAT AL_EXT_MULAW_MCFORMATS AL_EXT_OFFSET AL_EXT_source_distance_model AL_EXT_SOURCE_RADIUS AL_EXT_STATIC_BUFFER AL_EXT_STEREO_ANGLES AL_LOKI_quadriphonic AL_SOFT_bformat_ex AL_SOFTX_bformat_hoa AL_SOFT_block_alignment AL_SOFT_buffer_length_query AL_SOFT_callback_buffer AL_SOFTX_convolution_effect AL_SOFT_deferred_updates AL_SOFT_direct_channels AL_SOFT_direct_channels_remix AL_SOFT_effect_target AL_SOFT_events AL_SOFT_gain_clamp_ex AL_SOFTX_hold_on_disconnect AL_SOFT_loop_points AL_SOFTX_map_buffer AL_SOFT_MSADPCM AL_SOFT_source_latency AL_SOFT_source_length AL_SOFT_source_resampler AL_SOFT_source_spatialize AL_SOFT_source_start_delay AL_SOFT_UHJ AL_SOFT_UHJ_ex
+1723652686.691 openal: info end
+1723652686.691 Detecting valid sound files.
+1723652686.691 file: check exists 'data/sound/generic/compsel.wav' = exits
+1723652686.691 file: check exists 'data/sound/generic/compwrk.wav' = exits
+1723652686.691 file: check exists 'data/sound/generic/holochng.wav' = exits
+1723652686.691 file: check exists 'data/sound/generic/menuwsh.wav' = exits
+1723652686.692 file: check exists 'data/sound/generic/movesel.wav' = exits
+1723652686.692 file: check exists 'data/sound/generic/negative.wav' = exits
+1723652686.692 file: check exists 'data/sound/generic/scrchang.wav' = exits
+1723652686.692 file: check exists 'data/sound/generic/secret.wav' = exits
+1723652686.692 file: check exists 'data/sound/generic/select.wav' = exits
+1723652686.692 file: check exists 'data/sound/generic/shipamb.wav' = exits
+1723652686.692 file: check exists 'data/sound/generic/stakdown.wav' = exits
+1723652686.692 file: check exists 'data/sound/generic/stakmove.wav' = exits
+1723652686.692 file: check exists 'data/sound/generic/vdu_off.wav' = exits
+1723652686.692 file: check exists 'data/sound/generic/vdu_on.wav' = exits
+1723652686.692 file: check exists 'data/sound/generic/vidtext.wav' = exits
+1723652686.692 file: check exists 'data/sound/biker/lok_ex.wav' = exits
+1723652686.692 file: check exists 'data/sound/biker/lok_gp.wav' = missing
+1723652686.692 file: check exists 'data/sound/biker/lok_gp01.wav' = exits
+1723652686.692 file: check exists 'data/sound/biker/lok_gp02.wav' = exits
+1723652686.692 file: check exists 'data/sound/biker/lok_gp03.wav' = exits
+1723652686.692 file: check exists 'data/sound/biker/lok_gp04.wav' = missing
+1723652686.692 file: check exists 'data/sound/biker/brd_gp.wav' = missing
+1723652686.692 file: check exists 'data/sound/biker/brd_gp01.wav' = exits
+1723652686.692 file: check exists 'data/sound/biker/brd_gp02.wav' = exits
+1723652686.692 file: check exists 'data/sound/biker/brd_gp03.wav' = exits
+1723652686.692 file: check exists 'data/sound/biker/brd_gp04.wav' = exits
+1723652686.692 file: check exists 'data/sound/biker/brd_gp05.wav' = exits
+1723652686.692 file: check exists 'data/sound/biker/brd_gp06.wav' = exits
+1723652686.692 file: check exists 'data/sound/biker/brd_gp07.wav' = exits
+1723652686.692 file: check exists 'data/sound/biker/brd_gp08.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/jay_gp.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/jay_gp01.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/jay_gp02.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/jay_gp03.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/jay_gp04.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/jay_gp05.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/cop_gp.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/cop_gp01.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/cop_gp02.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/cop_gp03.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/cop_gp04.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/cop_gp05.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/cop_gp06.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/rex_gp.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/rex_gp01.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/rex_gp02.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/rex_gp03.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/rex_gp04.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/rex_gp05.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/rex_gp06.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/rex_gp07.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/rex_gp08.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/foe_gp.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/foe_gp01.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/foe_gp02.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/foe_gp03.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/foe_gp04.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/nim_gp.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/nim_gp01.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/nim_gp02.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/nim_gp03.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/nim_gp04.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/nim_gp05.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/nep_gp.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/nep_gp01.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/nep_gp02.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/nep_gp03.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/nep_gp04.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/nep_gp05.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/sep_gp.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/sep_gp01.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/sep_gp02.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/sep_gp03.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/sep_gp04.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/joe_gp.wav' = missing
+1723652686.693 file: check exists 'data/sound/biker/joe_gp01.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/joe_gp02.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/joe_gp03.wav' = exits
+1723652686.693 file: check exists 'data/sound/biker/joe_gp04.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/joe_gp05.wav' = missing
+1723652686.694 file: check exists 'data/sound/biker/cuv_gp.wav' = missing
+1723652686.694 file: check exists 'data/sound/biker/cuv_gp01.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/cuv_gp02.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/cuv_gp03.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/cuv_gp04.wav' = missing
+1723652686.694 file: check exists 'data/sound/biker/hk5_gp.wav' = missing
+1723652686.694 file: check exists 'data/sound/biker/hk5_gp01.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/hk5_gp02.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/hk5_gp03.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/hk5_gp04.wav' = missing
+1723652686.694 file: check exists 'data/sound/biker/nub_gp.wav' = missing
+1723652686.694 file: check exists 'data/sound/biker/nub_gp01.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/nub_gp02.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/nub_gp03.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/nub_gp04.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/nub_gp05.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/nub_gp06.wav' = missing
+1723652686.694 file: check exists 'data/sound/biker/mep_gp.wav' = missing
+1723652686.694 file: check exists 'data/sound/biker/mep_gp01.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/mep_gp02.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/mep_gp03.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/mep_gp04.wav' = missing
+1723652686.694 file: check exists 'data/sound/biker/cer_gp.wav' = missing
+1723652686.694 file: check exists 'data/sound/biker/cer_gp01.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/cer_gp02.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/cer_gp03.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/cer_gp04.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/cer_gp05.wav' = missing
+1723652686.694 file: check exists 'data/sound/biker/ear_gp.wav' = missing
+1723652686.694 file: check exists 'data/sound/biker/ear_gp01.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/ear_gp02.wav' = exits
+1723652686.694 file: check exists 'data/sound/biker/ear_gp03.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/ear_gp04.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/ear_gp05.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/bel_gp.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/bel_gp01.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/bel_gp02.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/bel_gp03.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/bel_gp04.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/bel_gp05.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/lok_vp.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/lok_vp01.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/lok_vp02.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/lok_vp03.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/lok_vp04.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/lok_vp05.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/brd_vp.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/brd_vp01.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/brd_vp02.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/brd_vp03.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/brd_vp04.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/brd_vp05.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/brd_vp06.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/jay_vp.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/jay_vp01.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/jay_vp02.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/jay_vp03.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/jay_vp04.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/jay_vp05.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/jay_vp06.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/jay_vp07.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/cop_vp.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/cop_vp01.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/cop_vp02.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/cop_vp03.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/cop_vp04.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/cop_vp05.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/cop_vp06.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/rex_vp.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/rex_vp01.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/rex_vp02.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/rex_vp03.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/rex_vp04.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/rex_vp05.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/rex_vp06.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/foe_vp.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/foe_vp01.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/foe_vp02.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/foe_vp03.wav' = exits
+1723652686.695 file: check exists 'data/sound/biker/foe_vp04.wav' = missing
+1723652686.695 file: check exists 'data/sound/biker/nim_vp.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/nim_vp01.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/nim_vp02.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/nim_vp03.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/nim_vp04.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/nep_vp.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/nep_vp01.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/nep_vp02.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/nep_vp03.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/nep_vp04.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/nep_vp05.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/nep_vp06.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/nep_vp07.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/nep_vp08.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/sep_vp.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/sep_vp01.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/sep_vp02.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/sep_vp03.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/sep_vp04.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/sep_vp05.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/joe_vp.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/joe_vp01.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/joe_vp02.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/joe_vp03.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/joe_vp04.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/cuv_vp.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/cuv_vp01.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/cuv_vp02.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/cuv_vp03.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/cuv_vp04.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/cuv_vp05.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/cuv_vp06.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/hk5_vp.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/hk5_vp01.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/hk5_vp02.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/hk5_vp03.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/hk5_vp04.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/hk5_vp05.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/hk5_vp06.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/nub_vp.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/nub_vp01.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/nub_vp02.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/nub_vp03.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/nub_vp04.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/nub_vp05.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/mep_vp.wav' = missing
+1723652686.696 file: check exists 'data/sound/biker/mep_vp01.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/mep_vp02.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/mep_vp03.wav' = exits
+1723652686.696 file: check exists 'data/sound/biker/mep_vp04.wav' = missing
+1723652686.697 file: check exists 'data/sound/biker/cer_vp.wav' = missing
+1723652686.697 file: check exists 'data/sound/biker/cer_vp01.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/cer_vp02.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/cer_vp03.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/cer_vp04.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/cer_vp05.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/cer_vp06.wav' = missing
+1723652686.697 file: check exists 'data/sound/biker/ear_vp.wav' = missing
+1723652686.697 file: check exists 'data/sound/biker/ear_vp01.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/ear_vp02.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/ear_vp03.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/ear_vp04.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/ear_vp05.wav' = missing
+1723652686.697 file: check exists 'data/sound/biker/bel_vp.wav' = missing
+1723652686.697 file: check exists 'data/sound/biker/bel_vp01.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/bel_vp02.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/bel_vp03.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/bel_vp04.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/bel_vp05.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/bel_vp06.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/bel_vp07.wav' = missing
+1723652686.697 file: check exists 'data/sound/biker/lok_lp.wav' = missing
+1723652686.697 file: check exists 'data/sound/biker/lok_lp01.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/lok_lp02.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/lok_lp03.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/lok_lp04.wav' = missing
+1723652686.697 file: check exists 'data/sound/biker/brd_lp.wav' = missing
+1723652686.697 file: check exists 'data/sound/biker/brd_lp01.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/brd_lp02.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/brd_lp03.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/brd_lp04.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/brd_lp05.wav' = missing
+1723652686.697 file: check exists 'data/sound/biker/jay_lp.wav' = missing
+1723652686.697 file: check exists 'data/sound/biker/jay_lp01.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/jay_lp02.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/jay_lp03.wav' = exits
+1723652686.697 file: check exists 'data/sound/biker/jay_lp04.wav' = missing
+1723652686.698 file: check exists 'data/sound/biker/cop_lp.wav' = missing
+1723652686.698 file: check exists 'data/sound/biker/cop_lp01.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/cop_lp02.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/cop_lp03.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/cop_lp04.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/cop_lp05.wav' = missing
+1723652686.698 file: check exists 'data/sound/biker/rex_lp.wav' = missing
+1723652686.698 file: check exists 'data/sound/biker/rex_lp01.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/rex_lp02.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/rex_lp03.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/rex_lp04.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/rex_lp05.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/rex_lp06.wav' = missing
+1723652686.698 file: check exists 'data/sound/biker/foe_lp.wav' = missing
+1723652686.698 file: check exists 'data/sound/biker/foe_lp01.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/foe_lp02.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/foe_lp03.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/foe_lp04.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/foe_lp05.wav' = missing
+1723652686.698 file: check exists 'data/sound/biker/nim_lp.wav' = missing
+1723652686.698 file: check exists 'data/sound/biker/nim_lp01.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/nim_lp02.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/nim_lp03.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/nim_lp04.wav' = missing
+1723652686.698 file: check exists 'data/sound/biker/nep_lp.wav' = missing
+1723652686.698 file: check exists 'data/sound/biker/nep_lp01.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/nep_lp02.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/nep_lp03.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/nep_lp04.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/nep_lp05.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/nep_lp06.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/nep_lp07.wav' = missing
+1723652686.698 file: check exists 'data/sound/biker/sep_lp.wav' = missing
+1723652686.698 file: check exists 'data/sound/biker/sep_lp01.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/sep_lp02.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/sep_lp03.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/sep_lp04.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/sep_lp05.wav' = missing
+1723652686.698 file: check exists 'data/sound/biker/joe_lp.wav' = missing
+1723652686.698 file: check exists 'data/sound/biker/joe_lp01.wav' = exits
+1723652686.698 file: check exists 'data/sound/biker/joe_lp02.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/joe_lp03.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/joe_lp04.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/joe_lp05.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/cuv_lp.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/cuv_lp01.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/cuv_lp02.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/cuv_lp03.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/cuv_lp04.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/cuv_lp05.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/hk5_lp.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/hk5_lp01.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/hk5_lp02.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/hk5_lp03.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/hk5_lp04.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/hk5_lp05.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/nub_lp.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/nub_lp01.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/nub_lp02.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/nub_lp03.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/nub_lp04.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/nub_lp05.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/nub_lp06.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/mep_lp.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/mep_lp01.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/mep_lp02.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/mep_lp03.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/mep_lp04.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/mep_lp05.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/cer_lp.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/cer_lp01.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/cer_lp02.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/cer_lp03.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/cer_lp04.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/cer_lp05.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/ear_lp.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/ear_lp01.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/ear_lp02.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/ear_lp03.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/ear_lp04.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/bel_lp.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/bel_lp01.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/bel_lp02.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/bel_lp03.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/bel_lp04.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/bel_lp05.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/lok_bw.wav' = missing
+1723652686.699 file: check exists 'data/sound/biker/lok_bw01.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/lok_bw02.wav' = exits
+1723652686.699 file: check exists 'data/sound/biker/lok_bw03.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/lok_bw04.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/brd_bw.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/brd_bw01.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/brd_bw02.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/brd_bw03.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/brd_bw04.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/brd_bw05.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/brd_bw06.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/jay_bw.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/jay_bw01.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/jay_bw02.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/jay_bw03.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/jay_bw04.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/jay_bw05.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/cop_bw.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/cop_bw01.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/cop_bw02.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/cop_bw03.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/cop_bw04.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/cop_bw05.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/rex_bw.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/rex_bw01.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/rex_bw02.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/rex_bw03.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/rex_bw04.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/rex_bw05.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/rex_bw06.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/foe_bw.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/foe_bw01.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/foe_bw02.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/foe_bw03.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/foe_bw04.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/foe_bw05.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/nim_bw.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/nim_bw01.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/nim_bw02.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/nim_bw03.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/nim_bw04.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/nep_bw.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/nep_bw01.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/nep_bw02.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/nep_bw03.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/nep_bw04.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/nep_bw05.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/sep_bw.wav' = missing
+1723652686.700 file: check exists 'data/sound/biker/sep_bw01.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/sep_bw02.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/sep_bw03.wav' = exits
+1723652686.700 file: check exists 'data/sound/biker/sep_bw04.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/sep_bw05.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/joe_bw.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/joe_bw01.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/joe_bw02.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/joe_bw03.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/joe_bw04.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/joe_bw05.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/joe_bw06.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/cuv_bw.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/cuv_bw01.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/cuv_bw02.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/cuv_bw03.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/cuv_bw04.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/cuv_bw05.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/hk5_bw.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/hk5_bw01.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/hk5_bw02.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/hk5_bw03.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/hk5_bw04.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/nub_bw.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/nub_bw01.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/nub_bw02.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/nub_bw03.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/nub_bw04.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/nub_bw05.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/nub_bw06.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/mep_bw.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/mep_bw01.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/mep_bw02.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/mep_bw03.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/mep_bw04.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/mep_bw05.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/cer_bw.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/cer_bw01.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/cer_bw02.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/cer_bw03.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/cer_bw04.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/cer_bw05.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/ear_bw.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/ear_bw01.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/ear_bw02.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/ear_bw03.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/ear_bw04.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/bel_bw.wav' = missing
+1723652686.701 file: check exists 'data/sound/biker/bel_bw01.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/bel_bw02.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/bel_bw03.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/bel_bw04.wav' = exits
+1723652686.701 file: check exists 'data/sound/biker/bel_bw05.wav' = missing
+1723652686.702 file: check exists 'data/sound/biker/lok_le.wav' = missing
+1723652686.702 file: check exists 'data/sound/biker/lok_le01.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/lok_le02.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/lok_le03.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/lok_le04.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/lok_le05.wav' = missing
+1723652686.702 file: check exists 'data/sound/biker/brd_le.wav' = missing
+1723652686.702 file: check exists 'data/sound/biker/brd_le01.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/brd_le02.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/brd_le03.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/brd_le04.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/brd_le05.wav' = missing
+1723652686.702 file: check exists 'data/sound/biker/jay_le.wav' = missing
+1723652686.702 file: check exists 'data/sound/biker/jay_le01.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/jay_le02.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/jay_le03.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/jay_le04.wav' = missing
+1723652686.702 file: check exists 'data/sound/biker/cop_le.wav' = missing
+1723652686.702 file: check exists 'data/sound/biker/cop_le01.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/cop_le02.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/cop_le03.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/cop_le04.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/cop_le05.wav' = missing
+1723652686.702 file: check exists 'data/sound/biker/rex_le.wav' = missing
+1723652686.702 file: check exists 'data/sound/biker/rex_le01.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/rex_le02.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/rex_le03.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/rex_le04.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/rex_le05.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/rex_le06.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/rex_le07.wav' = exits
+1723652686.702 file: check exists 'data/sound/biker/rex_le08.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/rex_le09.wav' = missing
+1723652686.703 file: check exists 'data/sound/biker/foe_le.wav' = missing
+1723652686.703 file: check exists 'data/sound/biker/foe_le01.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/foe_le02.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/foe_le03.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/foe_le04.wav' = missing
+1723652686.703 file: check exists 'data/sound/biker/nim_le.wav' = missing
+1723652686.703 file: check exists 'data/sound/biker/nim_le01.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/nim_le02.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/nim_le03.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/nim_le04.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/nim_le05.wav' = missing
+1723652686.703 file: check exists 'data/sound/biker/nep_le.wav' = missing
+1723652686.703 file: check exists 'data/sound/biker/nep_le01.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/nep_le02.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/nep_le03.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/nep_le04.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/nep_le05.wav' = missing
+1723652686.703 file: check exists 'data/sound/biker/sep_le.wav' = missing
+1723652686.703 file: check exists 'data/sound/biker/sep_le01.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/sep_le02.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/sep_le03.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/sep_le04.wav' = exits
+1723652686.703 file: check exists 'data/sound/biker/sep_le05.wav' = missing
+1723652686.703 file: check exists 'data/sound/biker/joe_le.wav' = missing
+1723652686.703 file: check exists 'data/sound/biker/joe_le01.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/joe_le02.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/joe_le03.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/joe_le04.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/cuv_le.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/cuv_le01.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/cuv_le02.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/cuv_le03.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/cuv_le04.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/hk5_le.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/hk5_le01.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/hk5_le02.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/hk5_le03.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/hk5_le04.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/nub_le.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/nub_le01.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/nub_le02.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/nub_le03.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/nub_le04.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/nub_le05.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/nub_le06.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/nub_le07.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/mep_le.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/mep_le01.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/mep_le02.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/mep_le03.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/mep_le04.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/mep_le05.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/cer_le.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/cer_le01.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/cer_le02.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/cer_le03.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/cer_le04.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/cer_le05.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/ear_le.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/ear_le01.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/ear_le02.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/ear_le03.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/ear_le04.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/bel_le.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/bel_le01.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/bel_le02.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/bel_le03.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/bel_le04.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/bel_le05.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/bel_le06.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/lok_tn.wav' = missing
+1723652686.704 file: check exists 'data/sound/biker/lok_tn01.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/lok_tn02.wav' = exits
+1723652686.704 file: check exists 'data/sound/biker/lok_tn03.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/lok_tn04.wav' = missing
+1723652686.705 file: check exists 'data/sound/biker/brd_tn.wav' = missing
+1723652686.705 file: check exists 'data/sound/biker/brd_tn01.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/brd_tn02.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/brd_tn03.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/brd_tn04.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/brd_tn05.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/brd_tn06.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/brd_tn07.wav' = missing
+1723652686.705 file: check exists 'data/sound/biker/jay_tn.wav' = missing
+1723652686.705 file: check exists 'data/sound/biker/jay_tn01.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/jay_tn02.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/jay_tn03.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/jay_tn04.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/jay_tn05.wav' = missing
+1723652686.705 file: check exists 'data/sound/biker/cop_tn.wav' = missing
+1723652686.705 file: check exists 'data/sound/biker/cop_tn01.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/cop_tn02.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/cop_tn03.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/cop_tn04.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/cop_tn05.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/cop_tn06.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/cop_tn07.wav' = missing
+1723652686.705 file: check exists 'data/sound/biker/rex_tn.wav' = missing
+1723652686.705 file: check exists 'data/sound/biker/rex_tn01.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/rex_tn02.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/rex_tn03.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/rex_tn04.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/rex_tn05.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/rex_tn06.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/rex_tn07.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/rex_tn08.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/rex_tn09.wav' = missing
+1723652686.705 file: check exists 'data/sound/biker/foe_tn.wav' = missing
+1723652686.705 file: check exists 'data/sound/biker/foe_tn01.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/foe_tn02.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/foe_tn03.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/foe_tn04.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/foe_tn05.wav' = missing
+1723652686.705 file: check exists 'data/sound/biker/nim_tn.wav' = missing
+1723652686.705 file: check exists 'data/sound/biker/nim_tn01.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/nim_tn02.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/nim_tn03.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/nim_tn04.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/nim_tn05.wav' = missing
+1723652686.705 file: check exists 'data/sound/biker/nep_tn.wav' = missing
+1723652686.705 file: check exists 'data/sound/biker/nep_tn01.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/nep_tn02.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/nep_tn03.wav' = exits
+1723652686.705 file: check exists 'data/sound/biker/nep_tn04.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/nep_tn05.wav' = missing
+1723652686.706 file: check exists 'data/sound/biker/sep_tn.wav' = missing
+1723652686.706 file: check exists 'data/sound/biker/sep_tn01.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/sep_tn02.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/sep_tn03.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/sep_tn04.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/sep_tn05.wav' = missing
+1723652686.706 file: check exists 'data/sound/biker/joe_tn.wav' = missing
+1723652686.706 file: check exists 'data/sound/biker/joe_tn01.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/joe_tn02.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/joe_tn03.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/joe_tn04.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/joe_tn05.wav' = missing
+1723652686.706 file: check exists 'data/sound/biker/cuv_tn.wav' = missing
+1723652686.706 file: check exists 'data/sound/biker/cuv_tn01.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/cuv_tn02.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/cuv_tn03.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/cuv_tn04.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/cuv_tn05.wav' = missing
+1723652686.706 file: check exists 'data/sound/biker/hk5_tn.wav' = missing
+1723652686.706 file: check exists 'data/sound/biker/hk5_tn01.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/hk5_tn02.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/hk5_tn03.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/hk5_tn04.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/hk5_tn05.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/hk5_tn06.wav' = missing
+1723652686.706 file: check exists 'data/sound/biker/nub_tn.wav' = missing
+1723652686.706 file: check exists 'data/sound/biker/nub_tn01.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/nub_tn02.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/nub_tn03.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/nub_tn04.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/nub_tn05.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/nub_tn06.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/nub_tn07.wav' = missing
+1723652686.706 file: check exists 'data/sound/biker/mep_tn.wav' = missing
+1723652686.706 file: check exists 'data/sound/biker/mep_tn01.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/mep_tn02.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/mep_tn03.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/mep_tn04.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/mep_tn05.wav' = missing
+1723652686.706 file: check exists 'data/sound/biker/cer_tn.wav' = missing
+1723652686.706 file: check exists 'data/sound/biker/cer_tn01.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/cer_tn02.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/cer_tn03.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/cer_tn04.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/cer_tn05.wav' = exits
+1723652686.706 file: check exists 'data/sound/biker/cer_tn06.wav' = missing
+1723652686.707 file: check exists 'data/sound/biker/ear_tn.wav' = missing
+1723652686.707 file: check exists 'data/sound/biker/ear_tn01.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/ear_tn02.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/ear_tn03.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/ear_tn04.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/ear_tn05.wav' = missing
+1723652686.707 file: check exists 'data/sound/biker/bel_tn.wav' = missing
+1723652686.707 file: check exists 'data/sound/biker/bel_tn01.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/bel_tn02.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/bel_tn03.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/bel_tn04.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/bel_tn05.wav' = missing
+1723652686.707 file: check exists 'data/sound/biker/lok_pn.wav' = missing
+1723652686.707 file: check exists 'data/sound/biker/lok_pn01.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/lok_pn02.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/lok_pn03.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/lok_pn04.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/lok_pn05.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/lok_pn06.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/lok_pn07.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/lok_pn08.wav' = missing
+1723652686.707 file: check exists 'data/sound/biker/brd_pn.wav' = missing
+1723652686.707 file: check exists 'data/sound/biker/brd_pn01.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/brd_pn02.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/brd_pn03.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/brd_pn04.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/brd_pn05.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/brd_pn06.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/brd_pn07.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/brd_pn08.wav' = missing
+1723652686.707 file: check exists 'data/sound/biker/jay_pn.wav' = missing
+1723652686.707 file: check exists 'data/sound/biker/jay_pn01.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/jay_pn02.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/jay_pn03.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/jay_pn04.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/jay_pn05.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/jay_pn06.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/jay_pn07.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/jay_pn08.wav' = missing
+1723652686.707 file: check exists 'data/sound/biker/cop_pn.wav' = missing
+1723652686.707 file: check exists 'data/sound/biker/cop_pn01.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/cop_pn02.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/cop_pn03.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/cop_pn04.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/cop_pn05.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/cop_pn06.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/cop_pn07.wav' = exits
+1723652686.707 file: check exists 'data/sound/biker/cop_pn08.wav' = missing
+1723652686.707 file: check exists 'data/sound/biker/rex_pn.wav' = missing
+1723652686.708 file: check exists 'data/sound/biker/rex_pn01.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/rex_pn02.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/rex_pn03.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/rex_pn04.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/rex_pn05.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/rex_pn06.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/rex_pn07.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/rex_pn08.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/rex_pn09.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/rex_pn10.wav' = missing
+1723652686.708 file: check exists 'data/sound/biker/foe_pn.wav' = missing
+1723652686.708 file: check exists 'data/sound/biker/foe_pn01.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/foe_pn02.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/foe_pn03.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/foe_pn04.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/foe_pn05.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/foe_pn06.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/foe_pn07.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/foe_pn08.wav' = missing
+1723652686.708 file: check exists 'data/sound/biker/nim_pn.wav' = missing
+1723652686.708 file: check exists 'data/sound/biker/nim_pn01.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/nim_pn02.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/nim_pn03.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/nim_pn04.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/nim_pn05.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/nim_pn06.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/nim_pn07.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/nim_pn08.wav' = missing
+1723652686.708 file: check exists 'data/sound/biker/nep_pn.wav' = missing
+1723652686.708 file: check exists 'data/sound/biker/nep_pn01.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/nep_pn02.wav' = exits
+1723652686.708 file: check exists 'data/sound/biker/nep_pn03.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/nep_pn04.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/nep_pn05.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/nep_pn06.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/nep_pn07.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/nep_pn08.wav' = missing
+1723652686.709 file: check exists 'data/sound/biker/sep_pn.wav' = missing
+1723652686.709 file: check exists 'data/sound/biker/sep_pn01.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/sep_pn02.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/sep_pn03.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/sep_pn04.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/sep_pn05.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/sep_pn06.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/sep_pn07.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/sep_pn08.wav' = missing
+1723652686.709 file: check exists 'data/sound/biker/joe_pn.wav' = missing
+1723652686.709 file: check exists 'data/sound/biker/joe_pn01.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/joe_pn02.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/joe_pn03.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/joe_pn04.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/joe_pn05.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/joe_pn06.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/joe_pn07.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/joe_pn08.wav' = missing
+1723652686.709 file: check exists 'data/sound/biker/cuv_pn.wav' = missing
+1723652686.709 file: check exists 'data/sound/biker/cuv_pn01.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/cuv_pn02.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/cuv_pn03.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/cuv_pn04.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/cuv_pn05.wav' = missing
+1723652686.709 file: check exists 'data/sound/biker/hk5_pn.wav' = missing
+1723652686.709 file: check exists 'data/sound/biker/hk5_pn01.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/hk5_pn02.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/hk5_pn03.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/hk5_pn04.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/hk5_pn05.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/hk5_pn06.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/hk5_pn07.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/hk5_pn08.wav' = missing
+1723652686.709 file: check exists 'data/sound/biker/nub_pn.wav' = missing
+1723652686.709 file: check exists 'data/sound/biker/nub_pn01.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/nub_pn02.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/nub_pn03.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/nub_pn04.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/nub_pn05.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/nub_pn06.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/nub_pn07.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/nub_pn08.wav' = missing
+1723652686.709 file: check exists 'data/sound/biker/mep_pn.wav' = missing
+1723652686.709 file: check exists 'data/sound/biker/mep_pn01.wav' = exits
+1723652686.709 file: check exists 'data/sound/biker/mep_pn02.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/mep_pn03.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/mep_pn04.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/mep_pn05.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/mep_pn06.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/mep_pn07.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/mep_pn08.wav' = missing
+1723652686.710 file: check exists 'data/sound/biker/cer_pn.wav' = missing
+1723652686.710 file: check exists 'data/sound/biker/cer_pn01.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/cer_pn02.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/cer_pn03.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/cer_pn04.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/cer_pn05.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/cer_pn06.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/cer_pn07.wav' = missing
+1723652686.710 file: check exists 'data/sound/biker/ear_pn.wav' = missing
+1723652686.710 file: check exists 'data/sound/biker/ear_pn01.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/ear_pn02.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/ear_pn03.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/ear_pn04.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/ear_pn05.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/ear_pn06.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/ear_pn07.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/ear_pn08.wav' = missing
+1723652686.710 file: check exists 'data/sound/biker/bel_pn.wav' = missing
+1723652686.710 file: check exists 'data/sound/biker/bel_pn01.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/bel_pn02.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/bel_pn03.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/bel_pn04.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/bel_pn05.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/bel_pn06.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/bel_pn07.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/bel_pn08.wav' = missing
+1723652686.710 file: check exists 'data/sound/biker/lok_dt.wav' = missing
+1723652686.710 file: check exists 'data/sound/biker/lok_dt01.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/lok_dt02.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/lok_dt03.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/lok_dt04.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/lok_dt05.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/lok_dt06.wav' = missing
+1723652686.710 file: check exists 'data/sound/biker/brd_dt.wav' = missing
+1723652686.710 file: check exists 'data/sound/biker/brd_dt01.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/brd_dt02.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/brd_dt03.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/brd_dt04.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/brd_dt05.wav' = missing
+1723652686.710 file: check exists 'data/sound/biker/jay_dt.wav' = missing
+1723652686.710 file: check exists 'data/sound/biker/jay_dt01.wav' = exits
+1723652686.710 file: check exists 'data/sound/biker/jay_dt02.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/jay_dt03.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/jay_dt04.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/jay_dt05.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/cop_dt.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/cop_dt01.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/cop_dt02.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/cop_dt03.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/cop_dt04.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/cop_dt05.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/cop_dt06.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/rex_dt.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/rex_dt01.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/rex_dt02.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/rex_dt03.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/rex_dt04.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/rex_dt05.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/rex_dt06.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/foe_dt.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/foe_dt01.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/foe_dt02.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/foe_dt03.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/foe_dt04.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/nim_dt.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/nim_dt01.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/nim_dt02.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/nim_dt03.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/nim_dt04.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/nim_dt05.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/nep_dt.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/nep_dt01.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/nep_dt02.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/nep_dt03.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/nep_dt04.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/nep_dt05.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/sep_dt.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/sep_dt01.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/sep_dt02.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/sep_dt03.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/sep_dt04.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/sep_dt05.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/joe_dt.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/joe_dt01.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/joe_dt02.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/joe_dt03.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/joe_dt04.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/joe_dt05.wav' = exits
+1723652686.711 file: check exists 'data/sound/biker/joe_dt06.wav' = missing
+1723652686.711 file: check exists 'data/sound/biker/cuv_dt.wav' = missing
+1723652686.712 file: check exists 'data/sound/biker/cuv_dt01.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/cuv_dt02.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/cuv_dt03.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/cuv_dt04.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/cuv_dt05.wav' = missing
+1723652686.712 file: check exists 'data/sound/biker/hk5_dt.wav' = missing
+1723652686.712 file: check exists 'data/sound/biker/hk5_dt01.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/hk5_dt02.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/hk5_dt03.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/hk5_dt04.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/hk5_dt05.wav' = missing
+1723652686.712 file: check exists 'data/sound/biker/nub_dt.wav' = missing
+1723652686.712 file: check exists 'data/sound/biker/nub_dt01.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/nub_dt02.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/nub_dt03.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/nub_dt04.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/nub_dt05.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/nub_dt06.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/nub_dt07.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/nub_dt08.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/nub_dt09.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/nub_dt10.wav' = missing
+1723652686.712 file: check exists 'data/sound/biker/mep_dt.wav' = missing
+1723652686.712 file: check exists 'data/sound/biker/mep_dt01.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/mep_dt02.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/mep_dt03.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/mep_dt04.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/mep_dt05.wav' = missing
+1723652686.712 file: check exists 'data/sound/biker/cer_dt.wav' = missing
+1723652686.712 file: check exists 'data/sound/biker/cer_dt01.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/cer_dt02.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/cer_dt03.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/cer_dt04.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/cer_dt05.wav' = missing
+1723652686.712 file: check exists 'data/sound/biker/ear_dt.wav' = missing
+1723652686.712 file: check exists 'data/sound/biker/ear_dt01.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/ear_dt02.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/ear_dt03.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/ear_dt04.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/ear_dt05.wav' = missing
+1723652686.712 file: check exists 'data/sound/biker/bel_dt.wav' = missing
+1723652686.712 file: check exists 'data/sound/biker/bel_dt01.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/bel_dt02.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/bel_dt03.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/bel_dt04.wav' = exits
+1723652686.712 file: check exists 'data/sound/biker/bel_dt05.wav' = missing
+1723652686.713 file: check exists 'data/sound/biker/lok_ex.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/brd_ex.wav' = missing
+1723652686.713 file: check exists 'data/sound/biker/brd_ex01.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/brd_ex02.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/brd_ex03.wav' = missing
+1723652686.713 file: check exists 'data/sound/biker/jay_ex.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/cop_ex.wav' = missing
+1723652686.713 file: check exists 'data/sound/biker/cop_ex01.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/cop_ex02.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/cop_ex03.wav' = missing
+1723652686.713 file: check exists 'data/sound/biker/rex_ex.wav' = missing
+1723652686.713 file: check exists 'data/sound/biker/rex_ex01.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/rex_ex02.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/rex_ex03.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/rex_ex04.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/rex_ex05.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/rex_ex06.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/rex_ex07.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/rex_ex08.wav' = missing
+1723652686.713 file: check exists 'data/sound/biker/foe_ex.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/nim_ex.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/nep_ex.wav' = missing
+1723652686.713 file: check exists 'data/sound/biker/nep_ex01.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/nep_ex02.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/nep_ex03.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/nep_ex04.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/nep_ex05.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/nep_ex06.wav' = missing
+1723652686.713 file: check exists 'data/sound/biker/sep_ex.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/joe_ex.wav' = missing
+1723652686.713 file: check exists 'data/sound/biker/joe_ex01.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/joe_ex02.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/joe_ex03.wav' = missing
+1723652686.713 file: check exists 'data/sound/biker/cuv_ex.wav' = missing
+1723652686.713 file: check exists 'data/sound/biker/cuv_ex01.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/cuv_ex02.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/cuv_ex03.wav' = missing
+1723652686.713 file: check exists 'data/sound/biker/hk5_ex.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/nub_ex.wav' = missing
+1723652686.713 file: check exists 'data/sound/biker/nub_ex01.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/nub_ex02.wav' = exits
+1723652686.713 file: check exists 'data/sound/biker/nub_ex03.wav' = missing
+1723652686.714 file: check exists 'data/sound/biker/mep_ex.wav' = missing
+1723652686.714 file: check exists 'data/sound/biker/mep_ex01.wav' = exits
+1723652686.714 file: check exists 'data/sound/biker/mep_ex02.wav' = exits
+1723652686.714 file: check exists 'data/sound/biker/mep_ex03.wav' = missing
+1723652686.714 file: check exists 'data/sound/biker/cer_ex.wav' = exits
+1723652686.714 file: check exists 'data/sound/biker/ear_ex.wav' = missing
+1723652686.714 file: check exists 'data/sound/biker/ear_ex01.wav' = exits
+1723652686.714 file: check exists 'data/sound/biker/ear_ex02.wav' = exits
+1723652686.714 file: check exists 'data/sound/biker/ear_ex03.wav' = missing
+1723652686.714 file: check exists 'data/sound/biker/bel_ex.wav' = missing
+1723652686.714 file: check exists 'data/sound/biker/bel_ex01.wav' = exits
+1723652686.714 file: check exists 'data/sound/biker/bel_ex02.wav' = exits
+1723652686.714 file: check exists 'data/sound/biker/bel_ex03.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/p3b_am.wav' = exits
+1723652686.714 file: check exists 'data/sound/bikecomp/bre_am.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/bre_am.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/lan_am.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/lan_am.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/lep_am.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/lep_am.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/roa_am.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/roa_am.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/p3b_ap.wav' = exits
+1723652686.714 file: check exists 'data/sound/bikecomp/bre_ap.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/bre_ap.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/lan_ap.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/lan_ap.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/lep_ap.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/lep_ap.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/roa_ap.wav' = missing
+1723652686.714 file: check exists 'data/sound/bikecomp/roa_ap.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/p3b_bl.wav' = exits
+1723652686.715 file: check exists 'data/sound/bikecomp/bre_bl.wav' = exits
+1723652686.715 file: check exists 'data/sound/bikecomp/lan_bl.wav' = exits
+1723652686.715 file: check exists 'data/sound/bikecomp/lep_bl.wav' = exits
+1723652686.715 file: check exists 'data/sound/bikecomp/roa_bl.wav' = exits
+1723652686.715 file: check exists 'data/sound/bikecomp/p3b_bn.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/p3b_bn.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/bre_bn.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/bre_bn.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lan_bn.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lan_bn.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lep_bn.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lep_bn.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/roa_bn.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/roa_bn.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/p3b_ca.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/p3b_ca.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/bre_ca.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/bre_ca.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lan_ca.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lan_ca.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lep_ca.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lep_ca.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/roa_ca.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/roa_ca.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/p3b_cd.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/p3b_cd.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/bre_cd.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/bre_cd.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lan_cd.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lan_cd.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lep_cd.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lep_cd.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/roa_cd.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/roa_cd.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/p3b_cs.wav' = exits
+1723652686.715 file: check exists 'data/sound/bikecomp/bre_cs.wav' = exits
+1723652686.715 file: check exists 'data/sound/bikecomp/lan_cs.wav' = exits
+1723652686.715 file: check exists 'data/sound/bikecomp/lep_cs.wav' = exits
+1723652686.715 file: check exists 'data/sound/bikecomp/roa_cs.wav' = exits
+1723652686.715 file: check exists 'data/sound/bikecomp/p3b_dy.wav' = exits
+1723652686.715 file: check exists 'data/sound/bikecomp/bre_dy.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/bre_dy.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lan_dy.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lan_dy.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lep_dy.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/lep_dy.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/roa_dy.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/roa_dy.wav' = missing
+1723652686.715 file: check exists 'data/sound/bikecomp/p3b_ea.wav' = exits
+1723652686.715 file: check exists 'data/sound/bikecomp/bre_ea.wav' = exits
+1723652686.715 file: check exists 'data/sound/bikecomp/lan_ea.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/lep_ea.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/roa_ea.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/p3b_ex.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/bre_ex.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/bre_ex.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lan_ex.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lan_ex.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lep_ex.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lep_ex.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/roa_ex.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/roa_ex.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/p3b_fl.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/bre_fl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/bre_fl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lan_fl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lan_fl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lep_fl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lep_fl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/roa_fl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/roa_fl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/p3b_gk.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/bre_gk.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/bre_gk.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lan_gk.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lan_gk.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lep_gk.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lep_gk.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/roa_gk.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/roa_gk.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/p3b_gl.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/bre_gl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/bre_gl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lan_gl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lan_gl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lep_gl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/lep_gl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/roa_gl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/roa_gl.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/p3b_gm.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/bre_gm.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/lan_gm.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/lep_gm.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/roa_gm.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/p3b_gp.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/bre_gp.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/lan_gp.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/lep_gp.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/roa_gp.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/p3b_hc.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/p3b_hc.wav' = missing
+1723652686.716 file: check exists 'data/sound/bikecomp/bre_hc.wav' = exits
+1723652686.716 file: check exists 'data/sound/bikecomp/lan_hc.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/lep_hc.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/roa_hc.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/p3b_in.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/bre_in.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/lan_in.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/lep_in.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/roa_in.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/p3b_ir.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/bre_ir.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/bre_ir.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lan_ir.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lan_ir.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lep_ir.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lep_ir.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/roa_ir.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/roa_ir.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/p3b_ma.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/bre_ma.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/bre_ma.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lan_ma.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lan_ma.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lep_ma.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lep_ma.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/roa_ma.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/roa_ma.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/p3b_mk.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/bre_mk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/bre_mk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lan_mk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lan_mk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lep_mk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lep_mk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/roa_mk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/roa_mk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/p3b_mr.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/bre_mr.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/lan_mr.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/lep_mr.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/roa_mr.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/p3b_mu.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/bre_mu.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/lan_mu.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/lep_mu.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/roa_mu.wav' = exits
+1723652686.717 file: check exists 'data/sound/bikecomp/p3b_nk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/p3b_nk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/bre_nk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/bre_nk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lan_nk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lan_nk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lep_nk.wav' = missing
+1723652686.717 file: check exists 'data/sound/bikecomp/lep_nk.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/roa_nk.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/roa_nk.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/p3b_nl.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/bre_nl.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/bre_nl.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/lan_nl.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/lan_nl.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/lep_nl.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/lep_nl.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/roa_nl.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/roa_nl.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/p3b_np.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/bre_np.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/lan_np.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/lep_np.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/roa_np.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/p3b_nt.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/bre_nt.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/lan_nt.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/lep_nt.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/roa_nt.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/p3b_op.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/bre_op.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/lan_op.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/lep_op.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/roa_op.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/p3b_pg.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/bre_pg.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/lan_pg.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/lep_pg.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/roa_pg.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/p3b_pk.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/p3b_pk.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/bre_pk.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/bre_pk.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/lan_pk.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/lan_pk.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/lep_pk.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/lep_pk.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/roa_pk.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/roa_pk.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/p3b_pl.wav' = exits
+1723652686.718 file: check exists 'data/sound/bikecomp/bre_pl.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/bre_pl.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/lan_pl.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/lan_pl.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/lep_pl.wav' = missing
+1723652686.718 file: check exists 'data/sound/bikecomp/lep_pl.wav' = missing
+1723652686.719 file: check exists 'data/sound/bikecomp/roa_pl.wav' = missing
+1723652686.719 file: check exists 'data/sound/bikecomp/roa_pl.wav' = missing
+1723652686.719 file: check exists 'data/sound/bikecomp/p3b_pm.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/bre_pm.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/lan_pm.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/lep_pm.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/roa_pm.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/p3b_po.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/bre_po.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/lan_po.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/lep_po.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/roa_po.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/p3b_pp.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/bre_pp.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/lan_pp.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/lep_pp.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/roa_pp.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/p3b_pr.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/bre_pr.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/lan_pr.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/lep_pr.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/roa_pr.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/p3b_ps.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/bre_ps.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/lan_ps.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/lep_ps.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/roa_ps.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/p3b_py.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/bre_py.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/lan_py.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/lep_py.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/roa_py.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/p3b_qm.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/bre_qm.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/lan_qm.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/lep_qm.wav' = exits
+1723652686.719 file: check exists 'data/sound/bikecomp/roa_qm.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/p3b_rr.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/p3b_rr.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/bre_rr.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/lan_rr.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/lep_rr.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/roa_rr.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/p3b_sa.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/bre_sa.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/lan_sa.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/lep_sa.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/roa_sa.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/p3b_sc.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/bre_sc.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/lan_sc.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/lep_sc.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/roa_sc.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/p3b_sg.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/bre_sg.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/lan_sg.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/lep_sg.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/roa_sg.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/p3b_sh.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/p3b_sh.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/bre_sh.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/lan_sh.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/lep_sh.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/roa_sh.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/p3b_si.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/bre_si.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/lan_si.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/lep_si.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/roa_si.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/p3b_sl.wav' = exits
+1723652686.720 file: check exists 'data/sound/bikecomp/bre_sl.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/bre_sl.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/lan_sl.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/lan_sl.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/lep_sl.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/lep_sl.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/roa_sl.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/roa_sl.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/p3b_sm.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/p3b_sm.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/bre_sm.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/bre_sm.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/lan_sm.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/lan_sm.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/lep_sm.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/lep_sm.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/roa_sm.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/roa_sm.wav' = missing
+1723652686.720 file: check exists 'data/sound/bikecomp/p3b_sp.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/bre_sp.wav' = missing
+1723652686.721 file: check exists 'data/sound/bikecomp/bre_sp.wav' = missing
+1723652686.721 file: check exists 'data/sound/bikecomp/lan_sp.wav' = missing
+1723652686.721 file: check exists 'data/sound/bikecomp/lan_sp.wav' = missing
+1723652686.721 file: check exists 'data/sound/bikecomp/lep_sp.wav' = missing
+1723652686.721 file: check exists 'data/sound/bikecomp/lep_sp.wav' = missing
+1723652686.721 file: check exists 'data/sound/bikecomp/roa_sp.wav' = missing
+1723652686.721 file: check exists 'data/sound/bikecomp/roa_sp.wav' = missing
+1723652686.721 file: check exists 'data/sound/bikecomp/p3b_so.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/bre_so.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/lan_so.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/lep_so.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/roa_so.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/p3b_st.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/bre_st.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/lan_st.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/lep_st.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/roa_st.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/p3b_ti.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/bre_ti.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/lan_ti.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/lep_ti.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/roa_ti.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/p3b_tr.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/bre_tr.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/lan_tr.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/lep_tr.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/roa_tr.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/p3b_tx.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/bre_tx.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/lan_tx.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/lep_tx.wav' = exits
+1723652686.721 file: check exists 'data/sound/bikecomp/roa_tx.wav' = exits
+1723652686.721 InitRenderBufs
+1723652686.721 ReleaseRenderBufs
+1723652686.728 Added Texture: data\textures\CHARS1.PPM
+1723652686.728 Added Texture: data\textures\CHARS2.PPM
+1723652686.728 Added Texture: data\textures\f512x384.PPM
+1723652686.728 Added Texture: data\textures\FONT512.PPM
+1723652686.728 Loading disc1.mx
+1723652686.728 Added Texture: data\textures\M-TpageE.bmp
+1723652686.728 Loading disc2.mx
+1723652686.728 Added Texture: data\textures\M-TpageE.bmp
+1723652686.728 Loading disc3.mx
+1723652686.728 Added Texture: data\textures\M-TpageE.bmp
+1723652686.728 Added Texture: data\textures\M-Ptext3.bmp
+1723652686.728 Loading disc4.mx
+1723652686.728 Added Texture: data\textures\M-TpageE.bmp
+1723652686.728 Added Texture: data\textures\M-TpageD.bmp
+1723652686.728 Loading disc5.mx
+1723652686.729 Added Texture: data\textures\M-TpageE.bmp
+1723652686.729 Added Texture: data\textures\M-TpageD.bmp
+1723652686.729 Loading disc6.mx
+1723652686.729 Added Texture: data\textures\M-TpageE.bmp
+1723652686.729 Added Texture: data\textures\M-TpageD.bmp
+1723652686.729 Loading mbot.mx
+1723652686.729 Added Texture: data\textures\M-TpageF.bmp
+1723652686.729 Loading menuroom.mx
+1723652686.729 Added Texture: data\textures\M-TpageF.bmp
+1723652686.729 Added Texture: data\textures\M-TpageA.bmp
+1723652686.729 Added Texture: data\textures\M-TpageB.bmp
+1723652686.729 Added Texture: data\textures\M-TpageC.bmp
+1723652686.729 Added Texture: data\textures\M-TpageH.bmp
+1723652686.729 Loading vdu.mx
+1723652686.729 Added Texture: data\textures\M-TpageH.bmp
+1723652686.729 Added Texture: data\textures\M-TpageG.bmp
+1723652686.729 Added Texture: data\textures\M-TpageA.bmp
+1723652686.729 Loading holopad.mx
+1723652686.730 Added Texture: data\textures\M-TpageH.bmp
+1723652686.730 Added Texture: data\textures\M-TpageA.bmp
+1723652686.730 Loading mtop.mx
+1723652686.730 Added Texture: data\textures\M-TpageF.bmp
+1723652686.730 Loading menutvdummy.mx
+1723652686.730 Added Texture: data\textures\M-TpageC.bmp
+1723652686.730 Added Texture: data\textures\dummy.bmp
+1723652686.730 Loading menutv.mx
+1723652686.730 Added Texture: data\textures\M-TpageC.bmp
+1723652686.730 Loading hglaire.mx
+1723652686.730 Added Texture: data\textures\M-TpageA.bmp
+1723652686.730 Loading bracket.mx
+1723652686.730 Added Texture: data\textures\M-TpageH.bmp
+1723652686.730 Loading borg400.mxa
+1723652686.731 Added Texture: data\textures\borg.bmp
+1723652686.731 Loading brd400.mxa
+1723652686.731 Added Texture: data\textures\BRDALL.bmp
+1723652686.731 Loading laj400.mxa
+1723652686.731 Added Texture: data\textures\Lajay.bmp
+1723652686.731 Loading xcop400.mxa
+1723652686.731 Added Texture: data\textures\Excop.bmp
+1723652686.731 Loading truk400.mxa
+1723652686.731 Added Texture: data\textures\Trucker.bmp
+1723652686.731 Loading foet400.mxa
+1723652686.731 Added Texture: data\textures\Foetoid.bmp
+1723652686.731 Loading jap400.mxa
+1723652686.731 Added Texture: data\textures\JAPALL.bmp
+1723652686.731 Loading nut400.mxa
+1723652686.732 Added Texture: data\textures\NUTALL.bmp
+1723652686.732 Loading rhes400.mxa
+1723652686.732 Added Texture: data\textures\RHESGRID.bmp
+1723652686.732 Loading jo400.mxa
+1723652686.732 Added Texture: data\textures\JOGRID.bmp
+1723652686.732 Loading shrk400.mxa
+1723652686.732 Added Texture: data\textures\SHGRID.bmp
+1723652686.732 Loading hk400.mxa
+1723652686.732 Added Texture: data\textures\HK5GRID.bmp
+1723652686.732 Loading nbia400.mxa
+1723652686.732 Added Texture: data\textures\NGRID8BT.bmp
+1723652686.732 Loading mofi400.mxa
+1723652686.733 Added Texture: data\textures\MO-GRID.bmp
+1723652686.733 Loading cerb400.mxa
+1723652686.733 Added Texture: data\textures\CERBGRID.bmp
+1723652686.733 Loading slick400.mxa
+1723652686.733 Added Texture: data\textures\SLICGRID.bmp
+1723652686.733 Loading flygirl.mx
+1723652686.733 Added Texture: data\textures\BUTGRID.bmp
+1723652686.733 Loading flygirlhold1.mxa
+1723652686.733 Added Texture: data\textures\BUTGRID.bmp
+1723652686.733 Loading flygirlwinga.mxa
+1723652686.733 Added Texture: data\textures\BUTGRID.bmp
+1723652686.733 Loading flygirlwing1.mxa
+1723652686.733 Added Texture: data\textures\BUTGRID.bmp
+1723652686.733 Loading flygirlholda.mxa
+1723652686.733 Added Texture: data\textures\BUTGRID.bmp
+1723652686.733 build_gamma_table( 1.950000 )
+1723652686.733 Tload: Placeholder ( texture  2 )
+1723652686.733 Tload: Placeholder ( texture  3 )
+1723652686.733 file: check exists 'data/textures/chars1.png' = exits
+1723652686.755 Created texture: file=data\textures\CHARS1.PNG, width=256, height=256, colorkey=false
+1723652686.755 file: check exists 'data/textures/chars2.png' = exits
+1723652686.768 Created texture: file=data\textures\CHARS2.PNG, width=256, height=256, colorkey=false
+1723652686.768 file: check exists 'data/textures/f512x384.png' = exits
+1723652686.780 Created texture: file=data\textures\f512x384.PNG, width=256, height=256, colorkey=false
+1723652686.781 file: check exists 'data/textures/font512.png' = exits
+1723652686.794 Created texture: file=data\textures\FONT512.PNG, width=256, height=256, colorkey=true
+1723652686.794 file: check exists 'data/textures/m-tpagee.png' = exits
+libpng warning: iCCP: known incorrect sRGB profile
+1723652687.465 Created texture: file=data\textures\M-TpageE.PNG, width=2048, height=2048, colorkey=false
+1723652687.481 file: check exists 'data/textures/m-ptext3.png' = exits
+libpng warning: iCCP: known incorrect sRGB profile
+1723652688.039 Created texture: file=data\textures\M-Ptext3.PNG, width=2048, height=2048, colorkey=false
+1723652688.039 file: check exists 'data/textures/m-tpaged.png' = exits
+libpng warning: iCCP: known incorrect sRGB profile
+1723652688.593 Created texture: file=data\textures\M-TpageD.PNG, width=2048, height=2048, colorkey=false
+1723652688.593 file: check exists 'data/textures/m-tpagef.png' = exits
+libpng warning: iCCP: known incorrect sRGB profile
+1723652688.749 Created texture: file=data\textures\M-TpageF.PNG, width=1024, height=1024, colorkey=false
+1723652688.750 file: check exists 'data/textures/m-tpagea.png' = exits
+libpng warning: iCCP: known incorrect sRGB profile
+1723652689.372 Created texture: file=data\textures\M-TpageA.PNG, width=2048, height=2048, colorkey=false
+1723652689.372 file: check exists 'data/textures/m-tpageb.png' = exits
+libpng warning: iCCP: known incorrect sRGB profile
+1723652689.953 Created texture: file=data\textures\M-TpageB.PNG, width=2048, height=2048, colorkey=false
+1723652689.953 file: check exists 'data/textures/m-tpagec.png' = exits
+libpng warning: iCCP: known incorrect sRGB profile
+1723652690.535 Created texture: file=data\textures\M-TpageC.PNG, width=2048, height=2048, colorkey=false
+1723652690.535 file: check exists 'data/textures/m-tpageh.png' = exits
+libpng warning: iCCP: known incorrect sRGB profile
+1723652690.687 Created texture: file=data\textures\M-TpageH.PNG, width=1024, height=1024, colorkey=false
+1723652690.687 file: check exists 'data/textures/m-tpageg.png' = exits
+libpng warning: iCCP: known incorrect sRGB profile
+1723652691.295 Created texture: file=data\textures\M-TpageG.PNG, width=2048, height=2048, colorkey=false
+1723652691.296 file: check exists 'data/textures/dummy.png' = exits
+1723652691.302 Created texture: file=data\textures\dummy.PNG, width=128, height=128, colorkey=false
+1723652691.302 file: check exists 'data/textures/borg.png' = exits
+1723652691.311 Created texture: file=data\textures\borg.PNG, width=256, height=128, colorkey=false
+1723652691.312 file: check exists 'data/textures/brdall.png' = exits
+1723652691.320 Created texture: file=data\textures\BRDALL.PNG, width=256, height=128, colorkey=false
+1723652691.320 file: check exists 'data/textures/lajay.png' = exits
+1723652691.329 Created texture: file=data\textures\Lajay.PNG, width=256, height=128, colorkey=false
+1723652691.329 file: check exists 'data/textures/excop.png' = exits
+1723652691.337 Created texture: file=data\textures\Excop.PNG, width=256, height=128, colorkey=false
+1723652691.337 file: check exists 'data/textures/trucker.png' = exits
+1723652691.346 Created texture: file=data\textures\Trucker.PNG, width=256, height=128, colorkey=true
+1723652691.346 file: check exists 'data/textures/foetoid.png' = exits
+1723652691.355 Created texture: file=data\textures\Foetoid.PNG, width=256, height=128, colorkey=true
+1723652691.356 file: check exists 'data/textures/japall.png' = exits
+1723652691.364 Created texture: file=data\textures\JAPALL.PNG, width=256, height=128, colorkey=false
+1723652691.364 file: check exists 'data/textures/nutall.png' = exits
+1723652691.374 Created texture: file=data\textures\NUTALL.PNG, width=256, height=128, colorkey=false
+1723652691.374 file: check exists 'data/textures/rhesgrid.png' = exits
+1723652691.387 Created texture: file=data\textures\RHESGRID.PNG, width=256, height=128, colorkey=false
+1723652691.387 file: check exists 'data/textures/jogrid.png' = exits
+1723652691.399 Created texture: file=data\textures\JOGRID.PNG, width=256, height=128, colorkey=false
+1723652691.399 file: check exists 'data/textures/shgrid.png' = exits
+1723652691.412 Created texture: file=data\textures\SHGRID.PNG, width=256, height=128, colorkey=false
+1723652691.413 file: check exists 'data/textures/hk5grid.png' = exits
+1723652691.425 Created texture: file=data\textures\HK5GRID.PNG, width=256, height=128, colorkey=false
+1723652691.425 file: check exists 'data/textures/ngrid8bt.png' = exits
+1723652691.436 Created texture: file=data\textures\NGRID8BT.PNG, width=256, height=128, colorkey=false
+1723652691.436 file: check exists 'data/textures/mo-grid.png' = exits
+1723652691.446 Created texture: file=data\textures\MO-GRID.PNG, width=256, height=128, colorkey=true
+1723652691.446 file: check exists 'data/textures/cerbgrid.png' = exits
+1723652691.456 Created texture: file=data\textures\CERBGRID.PNG, width=256, height=128, colorkey=false
+1723652691.456 file: check exists 'data/textures/slicgrid.png' = exits
+1723652691.465 Created texture: file=data\textures\SLICGRID.PNG, width=256, height=128, colorkey=false
+1723652691.465 file: check exists 'data/textures/butgrid.png' = exits
+1723652691.475 Created texture: file=data\textures\BUTGRID.PNG, width=256, height=128, colorkey=false
+1723652691.476 Mxload - disc1.mx
+1723652691.476 created buffer to hold :32 verts
+
+Thread 1 "projectx.aarch6" received signal SIGSEGV, Segmentation fault.
+0x00000055555ec610 in Mxload (Filename=0x7ffffff0c8 "disc1.mx", Mxloadheader=0x5555fcb3a0 <ModelHeaders>, Panel=false, StoreTriangles=false) at src/mxload.c:266
+266					lpLVERTEX[i].x = old->x;
+(gdb) backtrace
+#0  0x00000055555ec610 in Mxload (Filename=0x7ffffff0c8 "disc1.mx", Mxloadheader=0x5555fcb3a0 <ModelHeaders>, Panel=false, StoreTriangles=false) at src/mxload.c:266
+#1  0x0000005555674174 in InitModel (NamePnt=0x5555bb20b0 <TitleModelNames>) at src/models.c:885
+#2  0x00000055555f9ae8 in InitView () at src/oct2.c:2079
+#3  0x0000005555671940 in AppInit (lpCmdLine=0x7ffffff250 "  -Debug") at src/main.c:516
+#4  0x0000005555671bf4 in main (argc=2, argv=0x7ffffff5b8) at src/main.c:609
