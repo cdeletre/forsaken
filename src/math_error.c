@@ -25,6 +25,10 @@ int matherr(struct exception * except)
 #endif
 {
 	total_exceptions++;
+#ifdef FIXME
+	/*
+	TODO: FIXME (build error)
+	*/
 	DebugPrintf( "matherr(#%d) %s( %lf, %lf ) = %lf %s\n",
 		total_exceptions,
 		except->name, except->arg1, except->arg2,
@@ -93,6 +97,7 @@ int matherr(struct exception * except)
 		default:
 			break;
 	}
+#endif
 	return 0;
 }
 

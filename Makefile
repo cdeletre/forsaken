@@ -6,7 +6,7 @@
 # make CC=i686-mingw32-gcc
 CC=gcc
 
-PANDORA=1
+PANDORA=0
 RPI?=0
 ODROID?=0
 
@@ -43,9 +43,13 @@ else
   HAVE_GLES=1
 endif
 endif
+
+FLAGS= -DARM
+FLAGS+= -I/usr/include/arm-linux-gnueabihf/ # (bits/libc-header-start.h)
 FLAGS+= -std=gnu99 -pipe
 CFLAGS=$(FLAGS) -Wall -Wextra
 LDFLAGS=$(FLAGS)
+HAVE_GLES=1
 
 # right now non debug build would probably crash anyway
 # we even release debug builds as the official release
@@ -174,7 +178,7 @@ else ifeq ($(MACOSX),1)
   LIB += -framework Cocoa  # Used to target Quartz by SDL_.
 else
 ifeq ($(HAVE_GLES),1)
-  LIB += -lGLES_CM -lEGL
+  LIB += -lGLESv1_CM -lEGL
   CFLAGS += -DHAVE_GLES
 else
   LIB += -lGL -lGLU
