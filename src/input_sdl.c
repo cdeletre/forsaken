@@ -274,9 +274,16 @@ void app_keyboard( SDL_KeyboardEvent * key )
 		}
 #endif
 		input_buffer_send(
+#if SDL_VERSION_ATLEAST(2,0,0)
+		/*
+		TODO: check if it works with SDL2
+		*/
+			key->keysym.sym
+#else
 			key->keysym.unicode ? 
 				key->keysym.unicode :
 				key->keysym.sym
+#endif
 		);
 	}
 }
@@ -577,11 +584,21 @@ bool joysticks_init(void)
 		JoystickInfo[i].NumAxis		= SDL_JoystickNumAxes(joy);
 		JoystickInfo[i].NumButtons	= SDL_JoystickNumButtons(joy);
 		JoystickInfo[i].NumPOVs		= SDL_JoystickNumHats(joy);
+		
+#ifdef FIXME
+	/*
+	TODO: FIXME with SDL2 (crash with SIGSEGV, Segmentation fault)
+	*/
+	JoystickInfo[i].Name = strdup( SDL_JoystickName(i) );
+#else
+	#if SDL_VERSION_ATLEAST(2,0,0)
 
-		// TODO
-		// JoystickInfo[i].NumBalls = SDL_JoystickNumBalls(joy);
-
+		JoystickInfo[i].Name = "FIXME";
+	#else
 		JoystickInfo[i].Name = strdup( SDL_JoystickName(i) );
+	#endif
+#endif
+
 
 		DebugPrintf( 
 			"joysticks_init: joystick (%d), name='%s', axises=%d, buttons=%d, hats=%d\n", 
