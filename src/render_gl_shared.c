@@ -623,13 +623,13 @@ static void detect_caps( void )
 	caps.anisotropic = 0.0f;
 
 #if GL < 3
-	#ifdef FIXME
-		/*
-		TODO:FIXME (crash at run)
-		*/
+	const GLubyte* extensions = glGetString(GL_EXTENSIONS);
+	if (extensions != NULL) {
 		if(strstr((char*)glGetString(GL_EXTENSIONS), "GL_EXT_texture_filter_anisotropic"))
 			glGetFloatv(GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT, &caps.anisotropic );
-	#endif
+	} else {
+		DebugPrintf("Erreur : Impossible de récupérer les extensions OpenGL ES.\n");
+	}
 #else
   #ifdef MACOSX // TODO - Bug in mac drivers.. hopefully everyone also gets a value of 16f
 	// OSX 10.8.2, AMD Radeon HD 6750M, GL 2.1 ATI-1.0.29, shader 1.20
