@@ -148,6 +148,10 @@ static void set_opengl_settings( void )
 	// BPP should be left alone to match whatever the desktop is at.
 #ifndef HAVE_GLES
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER,	  1);
+#else
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_ES);
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 1);
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
 #endif
 
 #if SDL_VERSION_ATLEAST(2,0,0)

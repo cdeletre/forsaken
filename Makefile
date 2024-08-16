@@ -45,10 +45,19 @@ endif
 endif
 
 FLAGS= -DARM
+FLAGS+= -DPORTMASTER # for our stuffs
+FLAGS+= -mfpu=crypto-neon-fp-armv8 # Enable advanced SIMD https://developer.arm.com/documentation/dui0774/l/Compiler-Command-line-Options/-mfpu
+FLAG+= -fsingle-precision-constant # better performance than with double precision on some hardware
+FLAGS+= -fsigned-char # https://developer.arm.com/documentation/den0013/d/Porting/Miscellaneous-C-porting-issues/unsigned-char-and-signed-char
+# FLAGS+= -mno-unaligned-access # Not needed: https://developer.arm.com/documentation/dui0491/i/Compiler-Command-line-Options/--unaligned-access----no-unaligned-access
+FLAGS+= -fdiagnostics-color=auto
+# FLAGS+= -O3 # disabled for debugging
 FLAGS+= -I/usr/include/arm-linux-gnueabihf/ # (bits/libc-header-start.h)
 FLAGS+= -std=gnu99 -pipe
+
 CFLAGS=$(FLAGS) -Wall -Wextra
 LDFLAGS=$(FLAGS)
+
 HAVE_GLES=1
 
 # right now non debug build would probably crash anyway
@@ -117,7 +126,7 @@ endif
 MACOSX=$(shell uname -a | grep -qi darwin && echo 1 || echo 0)
 
 # which version of sdl do you want to ask pkgconfig for ?
-SDL=1
+SDL=2
 ifeq ($(SDL),1)
   SDL_=sdl
   CFLAGS+=`sdl-config --cflags`
