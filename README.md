@@ -75,7 +75,7 @@ root@ebf47c554692:~# pkg-config libenet --cflags --libs
 ```
 git clone https://github.com/lunarmodules/luasocket.git
 cd luasocket
-git checkout git checkout v2.0.2
+git checkout v2.0.2
 
 echo "LUAINC=-I/usr/include/lua5.1" >> config
 make -j4
